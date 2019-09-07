@@ -1,0 +1,32 @@
+@import "grid/main";
+@import "slick/main";
+@import "styles/support/normalize";
+@import "styles/support/variables";
+@import "styles/support/fonts";
+@import "styles/support/mixins";
+@import "styles/support/grid";
+@import "styles/support/common";
+@import "styles/support/slider";
+@import "styles/support/buttons";
+@import "styles/components/header";
+
+html {
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+}
+
+body {
+
+}
+
+@include tablet {
+  body {
+  }
+}
+
+@include desktop {
+
+
+}

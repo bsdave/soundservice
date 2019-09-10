@@ -1,0 +1,33 @@
+.yellow-circle{
+  background: $color-yellow;
+  padding: 20px;
+  border-radius: 50%;
+}
+.big-title{
+  font-family: 'Muller';
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #3C4147;
+  margin: 0;
+  padding-bottom: 5px;
+}
+.subtitle,
+.description{
+  margin: 0;
+  padding: 0;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #8C9196;
+}
+
+.title{
+  font-family: 'Muller';
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #3C4147;
+  padding: 0;
+}

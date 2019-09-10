@@ -1,68 +1,88 @@
 .slider-box {
-  margin-top: 62px;
-  margin-right: -25px;
-  margin-left: -25px;
   position: relative;
-  .counter {
-    position: absolute;
-    left: 42%;
-    top: -44px;
-    font-family: 'Circe-Regular';
-    font-weight: 400;
-    display: block;
-    letter-spacing: 2px;
-    color: #989FAB;
-    #total {
-      font-size: 12px;
-    }
-    #current {
-      font-size: 18px;
-      color: $color-white;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  .slider {
+    .slide {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 451px;
+
+      .slide-body {
+        padding: 112px 0px 28px 6px;
+      }
     }
   }
-  .slide-controls {
-    .prev-loc,
-    .next-loc {
-      content: "";
-      position: absolute;
-      width: 25px;
-      height: 50px;
-      top: -50px;
-      background: url("../images/arrow.svg") center no-repeat;
-      background-color: #FFFFFF;
-      padding: 10px 22px;
-      z-index: 10;
-      cursor: pointer;
-      margin: auto;
-      overflow: auto;
-    }
-    .prev-loc {
-      left: 0;
-    }
-    .next-loc {
-      right: 0;
-      transform: rotate(180deg);
+
+  .counter {
+    position: absolute;
+    left: 30px;
+    bottom: 240px;
+
+    color: #8b9eb1;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    #current {
+      font-size: 18px;
+      color: #000;
     }
   }
 }
 
 @include desktop {
   .slider-box {
-    margin: auto;
-    margin-bottom: 100px;
-    .counter {
-      display: none;
+    margin-bottom: 90px;
+
+    .slider {
+      .slide {
+        min-height: 786px;
+
+        .slide-body {
+          padding: 286px 0 38px;
+
+          .slide-right {
+            padding: 20px 10px 20px 80px;
+          }
+        }
+      }
     }
-    .slide-controls {
-      .prev-loc,
-      .next-loc {
-        content: "";
-        position: absolute;
-        width: 25px;
-        height: 50px;
-        top: calc(50% - 25px);
-        padding: 30px;
+
+    .counter {
+      left: auto;
+      right: 45px;
+      bottom: 40px;
+
+      font-size: 14px;
+      letter-spacing: 2px;
+
+      #current {
+        font-size: 18px;
+        color: #000;
+      }
+    }
+
+    .buttons {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      margin-top: -120px;
+
+      .button {
+        flex-basis: 400px;
+        flex-grow: 0;
+        flex-shrink: 1;
+        display: block;
+        padding-top: 53px;
+        padding-bottom: 49px;
+
+        &:first-child {
+          text-align: right;
+        }
       }
     }
   }
 }
+

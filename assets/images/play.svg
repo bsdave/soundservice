@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="13px" viewBox="0 0 10 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Мобилка" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Музыка-Плейлисты-320" transform="translate(-163.000000, -455.000000)" fill="#3C4147" fill-rule="nonzero">
+            <g id="3" transform="translate(20.000000, 368.000000)">
+                <path d="M148.838444,89.7899133 L153.495758,96.9550116 C153.796746,97.4180713 153.665362,98.0374549 153.202302,98.3384436 C153.040092,98.4438803 152.85078,98.5 152.657314,98.5 L143.342686,98.5 C142.790401,98.5 142.342686,98.0522847 142.342686,97.5 C142.342686,97.3065341 142.398806,97.1172219 142.504242,96.9550116 L147.161556,89.7899133 C147.462545,89.3268536 148.081929,89.1954692 148.544988,89.496458 C148.662252,89.5726791 148.762223,89.67265 148.838444,89.7899133 Z" id="Triangle" transform="translate(148.000000, 93.500000) rotate(-270.000000) translate(-148.000000, -93.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

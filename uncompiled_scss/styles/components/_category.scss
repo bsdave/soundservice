@@ -1,0 +1,27 @@
+.category-box {
+  .categories {
+    .category-menu {
+      display: inline-flex;
+      flex-wrap: wrap;
+      .category-item {
+        list-style: none;
+        margin: 8px;
+        .category-link {
+          font-family: 'Muller';
+          font-weight: bold;
+          font-size: 10px;
+          line-height: 20px;
+          text-decoration: none;
+          color: #3C4147;
+          border: 1px solid #D8D8D8;
+          border-radius: 15px;
+          padding: 10px 14px;
+          text-transform: uppercase;
+          &.active{
+            border: 1px solid #3C4147;
+          }
+        }
+      }
+    }
+  }
+}

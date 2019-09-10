@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Мобилка" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Музыка-Меню" transform="translate(-272.000000, -30.000000)">
+            <g id="Menu">
+                <g id="Close" transform="translate(260.000000, 20.000000)">
+                    <rect id="Rectangle" fill="#D8D8D8" opacity="0" x="0" y="0" width="40" height="40"></rect>
+                    <path d="M28.0710678,10.5147186 L29.4852814,11.9289322 L22.4137186,18.9997186 L29.4852814,26.0710678 L28.0710678,27.4852814 L20.9997186,20.4137186 L13.9289322,27.4852814 L12.5147186,26.0710678 L19.5857186,18.9997186 L12.5147186,11.9289322 L13.9289322,10.5147186 L20.9997186,17.5857186 L28.0710678,10.5147186 Z" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

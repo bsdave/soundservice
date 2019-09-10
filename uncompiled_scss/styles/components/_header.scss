@@ -24,6 +24,10 @@
       &.right{
         justify-content: flex-end;
       }
+      .arrow{
+        margin-top: 24px;
+        margin-left: 14px;
+      }
     }
 
     .navigation {
@@ -69,8 +73,8 @@
         &::after {
           content: '';
           display: inline-block;
-          height: 20px;
-          width: 19px;
+          height: 22px;
+          width: 22px;
 
           background-repeat: no-repeat;
           background-position: center;

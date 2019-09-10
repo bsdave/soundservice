@@ -5,7 +5,11 @@ $(function () {
 
   $('.dropdown').click(function () {
     $(this).toggleClass('active');
-  })
+  });
+
+  $('.like-song').click(function () {
+    $(this).toggleClass('liked');
+  });
 
   initializeFirstScreenSlider();
   initializePlaylistSliders();

@@ -1,0 +1,127 @@
+.open{
+  margin-top: 45px;
+}
+.opened-playlist-box {
+  margin-top: 113px;
+
+  .opened-playlist-head {
+    margin-bottom: 20px;
+    .indicators-of-music {
+      display: flex;
+      .indicator{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 0 6px;
+        border-radius: 15px;
+        color: $color-white;
+        margin-right: 15px;
+      }
+      .pop-indicator {
+        background: #6DBF54;
+      }
+      .rb-indicator{
+        background: #49A3DE;
+      }
+      .rock-indicator{
+        background: #34BBC6;
+      }
+    }
+  }
+
+  .playlist-body {
+    .watch-all{
+      text-align: center;
+      margin-left: -31px;
+      .description{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 2px;
+      }
+    }
+    .playlist-item {
+      position: relative;
+      margin-left: 34px;
+      margin-bottom: 30px;
+      .playlist-footer{
+        .likeds{
+          position: relative;
+        }
+        .censorship{
+          margin-left: 5px;
+          color: #FF7373;
+          font-weight: bold;
+          font-size: 10px;
+          line-height: 20px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          border: 2px solid #FF7373;
+          padding: 4px 8px;
+          border-radius: 15px;
+        }
+        .quantity{
+          margin-left: 15px;
+          margin-right: 11px;
+        }
+        .sm-like{
+          position: absolute;
+          top: 2px;
+          left: 41px;
+
+          background: url("../images/sm-like.svg") center no-repeat;
+          height: 7px;
+          width: 8px;
+          border: none;
+        }
+      }
+      .flexbox {
+        .title{
+          margin-bottom: 0;
+          position: relative;
+          &:after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: -39px;
+
+            background: url("../images/sm-play.svg") center no-repeat;
+            height: 17px;
+            width: 21px;
+            border: none;
+          }
+        }
+        .artist{
+          font-size: 15px;
+          line-height: 25px;
+          color: #8E99A6;
+          font-weight: 400;
+          margin: 0;
+          padding-bottom: 5px;
+        }
+        .like-song {
+          position: absolute;
+          top: 0;
+          right: -8px;
+
+          background: url("../images/like.svg") center no-repeat;
+          height: 17px;
+          width: 19px;
+          border: none;
+
+          transition: 200ms;
+
+          &.liked {
+            background: url("../images/liked.svg") center no-repeat;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}

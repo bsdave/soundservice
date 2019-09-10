@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="19px" viewBox="0 0 15 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Мобилка" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Музыка-Открытый-плейлист-320" transform="translate(-19.000000, -174.000000)" fill="#E1E6EC" fill-rule="nonzero">
+            <g id="Playlist" transform="translate(19.000000, 80.000000)">
+                <g id="1" transform="translate(0.000000, 92.000000)">
+                    <path d="M10.1720958,6.04795554 L16.9673884,16.4026871 C17.5734176,17.3261601 17.3160785,18.5660667 16.3926055,19.1720958 C16.0666182,19.3860249 15.6852071,19.5 15.2952926,19.5 L1.7047074,19.5 C0.600137901,19.5 -0.295292599,18.6045695 -0.295292599,17.5 C-0.295292599,17.1100855 -0.181317546,16.7286744 0.0326115795,16.4026871 L6.82790418,6.04795554 C7.43393335,5.12448252 8.67383986,4.86714343 9.59731288,5.4731726 C9.82623282,5.6234013 10.0218671,5.81903561 10.1720958,6.04795554 Z" id="play" transform="translate(8.500000, 11.500000) rotate(-270.000000) translate(-8.500000, -11.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

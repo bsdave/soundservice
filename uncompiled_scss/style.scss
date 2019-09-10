@@ -23,15 +23,10 @@ html {
 }
 
 body {
-
+  background: #fff;
+  font-family: 'Muller';
+  font-size: 12px;
+  line-height: 15px;
+  color: #8E99A6;
 }
 
-@include tablet {
-  body {
-  }
-}
-
-@include desktop {
-
-
-}

@@ -70,15 +70,13 @@
       }
 
       .ico {
-        &::after {
-          content: '';
-          display: inline-block;
-          height: 22px;
-          width: 22px;
+        content: '';
+        display: inline-block;
+        height: 22px;
+        width: 22px;
 
-          background-repeat: no-repeat;
-          background-position: center;
-        }
+        background-repeat: no-repeat;
+        background-position: center;
       }
 
       .main-ico {

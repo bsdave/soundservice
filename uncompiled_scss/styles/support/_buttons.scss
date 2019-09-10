@@ -22,4 +22,14 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  &.transparent{
+    background: #fff;
+    border: 2px solid $color-yellow;
+    color: $color-yellow;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 229px;
+    padding: 7px 0px 7px 12px;
+  }
 }

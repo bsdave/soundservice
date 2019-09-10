@@ -7,6 +7,10 @@ $(function () {
     $(this).toggleClass('active');
   });
 
+  $('.points-body .point').on('click', function () {
+    $(this).toggleClass('opened');
+  });
+
   $('.like-song').click(function () {
     $(this).toggleClass('liked');
   });

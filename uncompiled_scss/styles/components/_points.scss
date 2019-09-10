@@ -1,0 +1,122 @@
+.points-box {
+  margin-bottom: 56px;
+  .points-head{
+    margin-top: 113px;
+  }
+  .schedule-head {
+    text-align: center;
+
+    .subtitle {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  .points-body {
+    margin-top: 45px;
+
+    .point {
+      .point-preview {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: -10px;
+        position: relative;
+
+        .title {
+          margin: 0;
+          padding-right: 40px;
+        }
+
+        .equalizer{
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 32px;
+            display: block;
+            width: 20px;
+            height: 20px;
+
+            background: url("../images/equalizer-ico.png") center no-repeat;
+          }
+        }
+
+        .opening-arrow {
+          flex-grow: 0;
+          flex-shrink: 0;
+
+          &::after {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+
+            background: url("../images/opening-arrow.svg") center no-repeat;
+          }
+        }
+      }
+
+      .point-information {
+        display: none;
+        margin-bottom: 12px;
+        margin-top: 11px;
+        .add-button{
+          margin-top: 13px;
+        }
+        .point-info {
+          margin-bottom: 15px;
+          .title {
+            font-size: 13px;
+            margin: 0;
+            padding-bottom: 5px;
+          }
+          .description{
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+
+        .settings-icons {
+          .icon {
+            display: inline-block;
+            height: 22px;
+            width: 22px;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 24px;
+
+          }
+
+          .sound-off {
+            background-image: url('../images/off-ico.svg');
+          }
+
+          .equalizer {
+            background-image: url('../images/equalizer-ico.png');
+          }
+
+          .edit {
+            background-image: url('../images/edit-ico.svg');
+          }
+
+          .delete {
+            background-image: url('../images/delete-ico.svg');
+          }
+        }
+      }
+
+      &.opened {
+
+        .opening-arrow {
+          transform: rotate(180deg);
+        }
+
+        .point-information {
+          display: block;
+        }
+      }
+    }
+  }
+}

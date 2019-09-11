@@ -1147,6 +1147,68 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .blacklist-box .blacklist .blacklist-footer .danger { background: #FF7373; color: #fff; text-transform: capitalize; width: 104px; padding: 0; }
 
+.settings-box { margin-top: 99px; margin-right: -20px; margin-left: -3px; }
+
+.settings-box .settings-head { margin-bottom: 47px; }
+
+.settings-box .settings-head .buttons-category { margin-left: -7px; border-radius: 10px; display: flex; justify-content: center; flex-wrap: wrap; max-width: 292px; margin-top: 10px; }
+
+.settings-box .settings-head .buttons-category .button { width: 145px; background: transparent; margin: 0; border: 1px solid #E1E6EC; }
+
+.settings-box .settings-head .buttons-category .button.button-1 { border-radius: 10px 0 0 0; }
+
+.settings-box .settings-head .buttons-category .button.button-2 { border-radius: 0 10px 0 0; }
+
+.settings-box .settings-head .buttons-category .button.button-3 { border-radius: 0 0 0 10px; }
+
+.settings-box .settings-head .buttons-category .button.button-4 { border-radius: 0 0 10px 0; }
+
+.settings-box .settings-head .buttons-category .button.active { background: #FFCF60; }
+
+.settings-box .settings-body { margin-left: 70px; }
+
+.settings-box .settings-body .setting { margin-bottom: 30px; }
+
+.settings-box .settings-body .setting .settings-info { position: relative; margin-bottom: 20px; }
+
+.settings-box .settings-body .setting .settings-info .title { margin: 0; }
+
+.settings-box .settings-body .setting .settings-info .delete { position: absolute; top: 10px; right: 14px; background: url("../images/delete-ico.svg") center no-repeat; color: #8E99A6; height: 21px; width: 16px; border: none; }
+
+.settings-box .settings-body .settings .checkbox { margin-bottom: 28px; }
+
+.settings-box .settings-body .settings .description { font-size: 10px; line-height: 20px; font-weight: bold; letter-spacing: 1.5px; color: #3C4147; text-transform: uppercase; }
+
+.settings-box .settings-body .settings .switch { position: relative; display: inline-block; width: 60px; height: 34px; }
+
+.settings-box .settings-body .settings .switch .input { opacity: 0; width: 0; height: 0; }
+
+.settings-box .settings-body .settings .switch input:checked + .slider { background-color: #FFF9EA; }
+
+.settings-box .settings-body .settings .switch input:checked + .slider:before { transform: translateX(26px); background: #FFCF60; }
+
+.settings-box .settings-body .settings .switch .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #E1E6EC; transition: .4s; }
+
+.settings-box .settings-body .settings .switch .slider:before { position: absolute; content: ""; height: 26px; width: 26px; left: 4px; bottom: 4px; background-color: #BEC9D6; transition: .4s; }
+
+.settings-box .settings-body .settings .switch .slider.round { border-radius: 34px; }
+
+.settings-box .settings-body .settings .switch .slider.round:before { border-radius: 50%; }
+
+.settings-box.second { margin-top: 105px; }
+
+.settings-box.second .settings-head { margin-bottom: 25px; }
+
+.address-box .address-info { text-align: center; margin-left: -7px; }
+
+.address-box .address-info .company-name { margin-bottom: 17px; }
+
+.address-box .address-info .company-name .description { padding-bottom: 8px; }
+
+.address-box .address-info .address .title { margin-top: 6px; font-size: 13px; line-height: 20px; }
+
+.address-box .address-info .edit-button .button { padding: 6px 0 6px 0; width: 144px; text-align: center; }
+
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 
 body { background: #fff; font-family: 'Muller'; font-size: 12px; line-height: 15px; color: #8E99A6; }

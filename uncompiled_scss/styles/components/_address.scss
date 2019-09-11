@@ -1,0 +1,40 @@
+.settings-box {
+  &.second {
+    margin-top: 105px;
+
+    .settings-head {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.address-box {
+  .address-info {
+    text-align: center;
+    margin-left: -7px;
+
+    .company-name {
+      margin-bottom: 17px;
+
+      .description {
+        padding-bottom: 8px;
+      }
+    }
+
+    .address {
+      .title {
+        margin-top: 6px;
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
+
+    .edit-button {
+      .button {
+        padding: 6px 0 6px 0;
+        width: 144px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.settings-box {
+  margin-top: 99px;
+  margin-right: -20px;
+  margin-left: -3px;
+
+  .settings-head {
+    margin-bottom: 47px;
+    .buttons-category {
+      margin-left: -7px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 292px;
+      margin-top: 10px;
+
+      .button {
+        width: 145px;
+        background: transparent;
+        margin: 0;
+        border: 1px solid #E1E6EC;
+
+        &.button-1 {
+          border-radius: 10px 0 0 0;
+        }
+
+        &.button-2 {
+          border-radius: 0 10px 0 0;
+        }
+
+        &.button-3 {
+          border-radius: 0 0 0 10px;
+        }
+
+        &.button-4 {
+          border-radius: 0 0 10px 0;
+        }
+
+        &.active {
+          background: $color-yellow;
+
+        }
+      }
+    }
+
+
+  }
+
+  .settings-body {
+    margin-left: 70px;
+    .setting{
+      margin-bottom: 30px;
+      .settings-info{
+        position: relative;
+        margin-bottom: 20px;
+        .title{
+          margin: 0;
+        }
+        .delete {
+
+          position: absolute;
+          top: 10px;
+          right: 14px;
+
+          background: url("../images/delete-ico.svg") center no-repeat;
+          color: #8E99A6;
+          height: 21px;
+          width: 16px;
+          border: none;
+
+
+        }
+      }
+    }
+    .settings {
+      .checkbox{
+        margin-bottom: 28px;
+      }
+      .description{
+        font-size: 10px;
+        line-height: 20px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        color: #3C4147;
+        text-transform: uppercase;
+      }
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+
+        .input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+
+        input:checked + .slider {
+          background-color: #FFF9EA;
+        }
+
+        input:checked + .slider:before {
+          -webkit-transform: translateX(26px);
+          -ms-transform: translateX(26px);
+          transform: translateX(26px);
+          background: $color-yellow;
+        }
+
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #E1E6EC;
+          -webkit-transition: .4s;
+          transition: .4s;
+
+          &:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: #BEC9D6;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+
+          &.round {
+            border-radius: 34px;
+
+            &:before {
+              border-radius: 50%;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

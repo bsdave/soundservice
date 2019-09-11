@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/slick/slick.js"></script>
+    <script src="assets/javascript/main.js"></script>
+    <title>Music Schedule</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-body head">
+            <nav class="navigation">
+                <div class="user-block">
+                    <img class="user-pic" src="assets/images/user-pic.svg" alt="">
+                    <div class="user-info">
+                        <p class="username">Максим</p>
+                        <p class="user-mail">soundmusic@gmail.com</p>
+                    </div>
+                </div>
+                <div class="close-toggler">
+                    <img class="toggler close" src="assets/images/menu-close.svg" alt="">
+                </div>
+                <ul class="navigation-menu">
+                    <li class="menu-item active">
+                        <span class="ico main-ico"></span><a href="#" class="menu-link active">Главная</a>
+                    </li>
+                    <li class="menu-item">
+                        <span class="ico playlists-ico"></span><a href="#" class="menu-link">Плейлисты</a>
+                    </li>
+                    <li class="menu-item">
+                        <span class="ico institutions-ico"></span><a href="#" class="menu-link">Мои заведения</a>
+                    </li>
+                    <li class="menu-item">
+                        <span class="ico advertising-ico"></span><a href="#" class="menu-link">Реклама</a>
+                    </li>
+                    <li class="menu-item bb">
+                        <span class="ico search-ico"></span><a href="#" class="menu-link">Поиск</a>
+                    </li>
+                    <li class="menu-item">
+                        <span class="ico help-ico"></span><a href="#" class="menu-link">Помощь</a>
+                    </li>
+                    <li class="menu-item">
+                        <span class="ico settings-ico"></span><a href="#" class="menu-link">Настройки</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="menu-toggle">
+                <div class="arrow">
+                    <img class="arrow-toggler" src="assets/images/arrow.svg" alt="">
+                </div>
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                    <label class="onoffswitch-label" for="myonoffswitch">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+                <img class="img-block toggler" src="assets/images/menu-open.svg" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="schedule-box">
+    <div class="container">
+        <div class="schedule-head">
+            <div class="info">
+                <h3 class="big-title">Ассорти</h3>
+                <p class="sm-description">Санкт-Петербург, улица Авиаконструкторов 5</p>
+            </div>
+
+
+            <div class="add-button">
+                <a class="button transparent" href="#">Настройки громкости</a>
+            </div>
+
+            <div class="add-button">
+                <a class="button transparent" href="#">+ Добавить плейлист</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="schedule-body">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="schedule">
+                        <div class="schedule-info">
+                            <div class="schedule-playlist-info">
+                                <div class="photo photo-1">
+                                    <span class="playing"></span>
+                                </div>
+                                <button class="settings-btn"></button>
+                                <p class="sm-description">Плейлист</p>
+                                <h3 class="title">Cover acustics Hits</h3>
+                            </div>
+                            <div class="schedule-datetime">
+                                <p class="sm-description">Дата проигрывания</p>
+                                <p class="date">02 Дек. 18 <span class="datetime">15 Дек. 18</span></p>
+                                <p class="sm-description">Время звучания</p>
+                                <p class="time">10:00 <span class="time-sec">22:00</span></p>
+                            </div>
+                            <div class="schedule-calendar">
+                                <p class="time-title">Время звучания</p>
+                                <span class="day mn active">Пн</span>
+                                <span class="day ts active">Вт</span>
+                                <span class="day ws active">Ср</span>
+                                <span class="day trs active">Чт</span>
+                                <span class="day fd active">Пт</span>
+                                <span class="day st">Сб</span>
+                                <span class="day sn">Вс</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="schedule">
+                        <div class="schedule-info">
+                            <div class="schedule-playlist-info">
+                                <div class="photo photo-2">
+                                    <span class="playing"></span>
+                                </div>
+                                <button class="settings-btn"></button>
+                                <p class="sm-description">Плейлист</p>
+                                <h3 class="title">Cover for Cofe Shop</h3>
+                            </div>
+                            <div class="schedule-datetime">
+                                <p class="sm-description">Дата проигрывания</p>
+                                <p class="date">02 Дек. 18 <span class="datetime">15 Дек. 18</span></p>
+                                <p class="sm-description">Время звучания</p>
+                                <p class="time">10:00 <span class="time-sec">22:00</span></p>
+                            </div>
+                            <div class="schedule-calendar">
+                                <p class="time-title">Время звучания</p>
+                                <span class="day mn active">Пн</span>
+                                <span class="day ts active">Вт</span>
+                                <span class="day ws">Ср</span>
+                                <span class="day trs">Чт</span>
+                                <span class="day fd">Пт</span>
+                                <span class="day st active">Сб</span>
+                                <span class="day sn active">Вс</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="schedule">
+                        <div class="schedule-info">
+                            <div class="schedule-playlist-info">
+                                <div class="photo photo-3">
+                                    <span class="playing"></span>
+                                </div>
+                                <button class="settings-btn"></button>
+                                <p class="sm-description">Плейлист</p>
+                                <h3 class="title">Cover acustics Hits</h3>
+                            </div>
+                            <div class="schedule-datetime">
+                                <p class="sm-description">Дата проигрывания</p>
+                                <p class="date">02 Дек. 18 <span class="datetime">15 Дек. 18</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

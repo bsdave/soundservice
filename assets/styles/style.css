@@ -777,6 +777,8 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .subtitle, .description { margin: 0; padding: 0; font-family: 'Muller'; font-weight: 400; font-size: 13px; line-height: 17px; color: #8C9196; }
 
+.sm-description { margin: 0; padding-right: 10%; font-family: 'Muller'; font-weight: 400; font-size: 12px; line-height: 15px; color: #8C9196; }
+
 .title { font-family: 'Muller'; font-weight: bold; font-size: 15px; line-height: 20px; color: #3C4147; padding: 0; }
 
 .slider-box { position: relative; margin-top: 0; margin-bottom: 50px; }
@@ -815,7 +817,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .header .header-body .menu-toggle.right { justify-content: flex-end; }
 
-.header .header-body .menu-toggle .arrow { margin-top: 24px; margin-left: 14px; }
+.header .header-body .menu-toggle .arrow { margin-top: 14px; margin-left: 12px; }
 
 .header .header-body .navigation { background: #3C4147; position: absolute; left: 0; right: 0; top: -2000px; opacity: 0; z-index: -1; transition: 300ms ease-out; text-align: left; }
 
@@ -973,10 +975,6 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .points-box .points-head { margin-top: 113px; }
 
-.points-box .schedule-head { text-align: center; }
-
-.points-box .schedule-head .subtitle { margin-right: 10px; margin-left: 10px; }
-
 .points-box .points-body { margin-top: 45px; }
 
 .points-box .points-body .point .point-preview { display: flex; align-items: center; justify-content: space-between; margin-right: -10px; position: relative; }
@@ -1012,6 +1010,76 @@ input[type="number"] { -moz-appearance: textfield; }
 .points-box .points-body .point.opened .opening-arrow { transform: rotate(180deg); }
 
 .points-box .points-body .point.opened .point-information { display: block; }
+
+.onoffswitch { position: relative; width: 108px; margin-top: 5px; }
+
+.onoffswitch-checkbox { display: none; }
+
+.onoffswitch-label { display: block; overflow: hidden; cursor: pointer; border-radius: 20px; }
+
+.onoffswitch-inner { display: block; width: 200%; margin-left: -100%; transition: margin 0.3s ease-in 0s; }
+
+.onoffswitch-inner:before, .onoffswitch-inner:after { display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px; font-size: 14px; color: white; box-sizing: border-box; }
+
+.onoffswitch-inner:before { content: "off"; padding-left: 10px; background-color: #EEEEEE; color: #999999; }
+
+.onoffswitch-inner:after { content: "В эфире"; padding-right: 10px; background-color: #84CC45; color: #FFFFFF; text-align: right; }
+
+.onoffswitch-switch { display: block; width: 26px; margin-bottom: 2px; background: #FFFFFF; position: absolute; top: 1px; bottom: 0; right: 80px; border-radius: 50%; transition: all 0.3s ease-in 0s; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner { margin-left: 0; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch { right: 0px; }
+
+.schedule-box { margin-top: 100px; margin-left: -3px; }
+
+.schedule-box .schedule-head { margin-bottom: 32px; }
+
+.schedule-box .schedule-head .info { margin-bottom: 20px; }
+
+.schedule-box .schedule-head .add-button { margin-bottom: 5px; }
+
+.schedule-box .schedule-head .add-button .button.transparent { text-align: center; width: 100%; padding: 7px 0px 5px 4px; }
+
+.schedule-box .schedule-body { background: #FAFAFA; padding: 30px 0; }
+
+.schedule-box .schedule-body .schedule { margin-bottom: 66px; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info { margin-left: 59px; position: relative; margin-bottom: 20px; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info .photo { position: absolute; top: -4px; left: -59px; color: #8E99A6; height: 43px; width: 43px; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info .photo.photo-1 { background: url("../images/photo.png") center no-repeat; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info .photo.photo-2 { background: url("../images/photo-2.png") center no-repeat; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info .photo.photo-3 { background: url("../images/photo-3.png") center no-repeat; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info .photo .playing { position: absolute; top: 0; left: 0; background: url("../images/playing.png") center no-repeat; color: #8E99A6; height: 43px; width: 43px; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info .settings-btn { position: absolute; top: 3px; right: -7px; background: url("../images/more.svg") center no-repeat; color: #8E99A6; height: 5px; width: 28px; border: none; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info .sm-description { margin-bottom: 5px; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info .title { margin: 0; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-calendar .time-title { margin: 0; padding-bottom: 18px; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-calendar .day { margin-right: 7px; color: #3C4147; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-calendar .active { background: #FFCF60; padding: 7px; border-radius: 50%; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-datetime .date, .schedule-box .schedule-body .schedule .schedule-info .schedule-datetime .time { font-size: 13px; line-height: 20px; color: #3C4147; margin: 0; padding: 7px 0 20px 0; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-datetime .time { font-weight: bold; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-datetime .time-sec { margin-left: 19px; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-datetime .datetime { margin-left: 45px; position: absolute; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-datetime .datetime::after { content: ""; position: absolute; top: -2px; left: -38px; display: block; width: 20px; height: 20px; background: url("../images/date.svg") center no-repeat; }
+
+.schedule-box .schedule-body .schedule .schedule-info .schedule-datetime .datetime::before { content: ""; position: absolute; top: -2px; right: -28px; display: block; width: 20px; height: 20px; background: url("../images/date.svg") center no-repeat; }
 
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 

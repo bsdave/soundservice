@@ -1,0 +1,34 @@
+.schedule-box {
+  &.advertising {
+    margin-top: 111px;
+    .schedule-head{
+      margin-bottom: -4px;
+    }
+  }
+
+
+  .schedule-body {
+    .schedule {
+      .schedule-info {
+        .contact-breaker{
+          margin-top: 25px;
+        }
+        .schedule-playlist-info {
+          &.advertising {
+            margin-left: 0;
+          }
+        }
+        .schedule-datetime{
+          .time-sec{
+            margin-left: 29px;
+            &.normal{
+              font-weight: 400;
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+}

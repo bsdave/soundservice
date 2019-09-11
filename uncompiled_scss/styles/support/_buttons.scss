@@ -32,4 +32,24 @@
     width: 229px;
     padding: 7px 0px 7px 12px;
   }
+  &.danger{
+    background: #fff;
+    border: 2px solid $color-red;
+    color: $color-red;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 116px;
+    padding: 4px 0px 5px 3px;
+  }
+
+  &.success{
+    background: $color-green;
+    color: $color-white;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 88px;
+    padding: 7px 0px 7px 3px;
+  }
 }

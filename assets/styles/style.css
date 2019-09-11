@@ -811,6 +811,8 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .button.success { background: #84CC45; color: #fff; font-size: 11px; letter-spacing: 1px; text-align: center; width: 88px; padding: 7px 0px 7px 3px; }
 
+.settings-btn { position: absolute; top: 3px; right: -7px; background: url("../images/more.svg") center no-repeat; color: #8E99A6; height: 5px; width: 28px; border: none; }
+
 .header { position: absolute; top: 0; z-index: 20; right: 0; left: 0; letter-spacing: 1.7px; line-height: normal; }
 
 .header .active { background: #373C42; color: #fff; border-left: 3px solid #FFCF60; }
@@ -1061,8 +1063,6 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info .photo .playing { position: absolute; top: 0; left: 0; background: url("../images/playing.png") center no-repeat; color: #8E99A6; height: 43px; width: 43px; }
 
-.schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info .settings-btn { position: absolute; top: 3px; right: -7px; background: url("../images/more.svg") center no-repeat; color: #8E99A6; height: 5px; width: 28px; border: none; }
-
 .schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info .sm-description { margin-bottom: 5px; }
 
 .schedule-box .schedule-body .schedule .schedule-info .schedule-playlist-info .title { margin: 0; }
@@ -1126,6 +1126,26 @@ input[type="number"] { -moz-appearance: textfield; }
 .tariffs .tariff .tariff-price .price { font-size: 13px; line-height: 25px; font-weight: 400; color: #3C4147; margin: 0; }
 
 .tariffs .tariff .tariff-price .price .bold { margin-left: 5px; font-weight: bold; font-size: 20px; line-height: 35px; }
+
+.blacklist-box { margin-top: 92px; }
+
+.blacklist-box .blacklist { margin-bottom: 41px; }
+
+.blacklist-box .blacklist .blacklist-head { position: relative; }
+
+.blacklist-box .blacklist .blacklist-head .settings-btn { top: 15px; right: -11px; }
+
+.blacklist-box .blacklist .blacklist-head .title { margin: 0; padding-bottom: 15px; }
+
+.blacklist-box .blacklist .blacklist-body { margin-bottom: 10px; }
+
+.blacklist-box .blacklist .blacklist-body .blacklist-datetime { margin-bottom: 10px; }
+
+.blacklist-box .blacklist .blacklist-body .blacklist-datetime .description { font-size: 15px; line-height: 25px; }
+
+.blacklist-box .blacklist .blacklist-body .blacklist-executor .description { font-size: 15px; line-height: 25px; }
+
+.blacklist-box .blacklist .blacklist-footer .danger { background: #FF7373; color: #fff; text-transform: capitalize; width: 104px; padding: 0; }
 
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 

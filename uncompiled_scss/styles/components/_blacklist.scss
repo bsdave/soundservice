@@ -1,0 +1,50 @@
+.blacklist-box {
+  margin-top: 92px;
+
+  .blacklist {
+    margin-bottom: 41px;
+    .blacklist-head {
+      position: relative;
+
+      .settings-btn {
+        top: 15px;
+        right: -11px;
+      }
+
+      .title {
+        margin: 0;
+        padding-bottom: 15px;
+      }
+    }
+
+    .blacklist-body {
+      margin-bottom: 10px;
+
+      .blacklist-datetime {
+        margin-bottom: 10px;
+
+        .description {
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+
+      .blacklist-executor {
+        .description {
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    .blacklist-footer {
+      .danger {
+        background: $color-red;
+        color: $color-white;
+        text-transform: capitalize;
+        width: 104px;
+        padding: 0;
+      }
+    }
+  }
+}

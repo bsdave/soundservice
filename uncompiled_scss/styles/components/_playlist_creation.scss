@@ -1,8 +1,10 @@
-.playlist-creation-block{
+.playlist-creation-block {
   margin-top: 92px;
   margin-bottom: 50px;
-  .playlist-creation-body{
-    .input{
+  text-align: center;
+
+  .playlist-creation-body {
+    .input {
       background: #F0F3F5;
       color: #E9E8E6;
       display: block;
@@ -13,12 +15,17 @@
       border: none;
       border-radius: 10px;
     }
-    .title{
-      text-align: left;
-    }
-    .description{
+
+    .description {
       padding: 0 15px;
       margin-bottom: 12px;
     }
+  }
+}
+
+@include tablet {
+  .playlist-creation-block {
+    width: 500px;
+    margin-left: 15%;
   }
 }

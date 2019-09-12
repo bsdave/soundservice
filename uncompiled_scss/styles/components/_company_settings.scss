@@ -5,6 +5,7 @@
 
   .settings-head {
     margin-bottom: 47px;
+
     .buttons-category {
       margin-left: -7px;
       border-radius: 10px;
@@ -48,14 +49,23 @@
 
   .settings-body {
     margin-left: 70px;
-    .setting{
-      margin-bottom: 30px;
-      .settings-info{
+
+    .setting {
+      margin-bottom: 25px;
+
+      .settings-info {
         position: relative;
         margin-bottom: 20px;
-        .title{
+        .photo{
+          position: absolute;
+          left: -70px;
+          top: -7px;
+        }
+
+        .title {
           margin: 0;
         }
+
         .delete {
 
           position: absolute;
@@ -72,11 +82,14 @@
         }
       }
     }
+
     .settings {
-      .checkbox{
+      .checkbox {
         margin-bottom: 28px;
+        margin-top: 7px;
       }
-      .description{
+
+      .description {
         font-size: 10px;
         line-height: 20px;
         font-weight: bold;
@@ -84,11 +97,12 @@
         color: #3C4147;
         text-transform: uppercase;
       }
+
       .switch {
         position: relative;
         display: inline-block;
         width: 60px;
-        height: 34px;
+        height: 30px;
 
         .input {
           opacity: 0;
@@ -121,12 +135,11 @@
           &:before {
             position: absolute;
             content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
+            height: 30px;
+            width: 30px;
+            left: 0;
+            bottom: 0;
             background-color: #BEC9D6;
-            -webkit-transition: .4s;
             transition: .4s;
           }
 
@@ -143,3 +156,5 @@
     }
   }
 }
+
+

@@ -74,3 +74,10 @@
     }
   }
 }
+
+@include tablet{
+  .players{
+    width: 500px;
+    margin-left: 5%;
+  }
+}

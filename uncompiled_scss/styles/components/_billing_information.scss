@@ -1,0 +1,69 @@
+.billing-information-box {
+  .billing-information-head{
+    margin-top: -7px;
+    margin-bottom: 18px;
+    .card-brands{
+      margin-top: 5px;
+      .card{
+        margin-right: 10px;
+      }
+    }
+  }
+  .form {
+    .deadline {
+      margin-bottom: 10px;
+      .inputs {
+        display: flex;
+
+        .input {
+          width: 29%;
+          margin-right: 10px;
+        }
+      }
+    }
+    .cart-number{
+      margin-bottom: 21px;
+    }
+    .owners-name{
+      margin-bottom: 18px;
+    }
+    .security-code{
+      margin-bottom: 20px;
+      .input{
+        width: 47%;
+      }
+    }
+
+    .label {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: bold;
+      color: #3C4147;
+      margin: 0;
+      padding-bottom: 5px;
+    }
+
+    .input {
+      background: #F0F3F5;
+      width: 100%;
+      padding: 18px 10px 15px 18px;
+      border: none;
+      border-radius: 10px;
+      display: block;
+      margin-bottom: 10px;
+
+      &.card-ico {
+        background-position: calc(100% - 10px) 51%;
+        background-repeat: no-repeat;
+        background-image: url("../images/card.png");
+        background-size: 33px;
+      }
+
+      &::placeholder {
+        font-size: 13px;
+        line-height: 20px;
+        color: #8E99A6;
+      }
+    }
+  }
+}

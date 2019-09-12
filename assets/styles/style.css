@@ -1294,6 +1294,42 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .second-card .card .card-body .card-institution .description { font-size: 11px; line-height: 15px; padding-bottom: 10px; font-weight: bold; color: #C3CCD7; }
 
+.billing-information-box .billing-information-head { margin-top: -7px; margin-bottom: 18px; }
+
+.billing-information-box .billing-information-head .card-brands { margin-top: 5px; }
+
+.billing-information-box .billing-information-head .card-brands .card { margin-right: 10px; }
+
+.billing-information-box .form .deadline { margin-bottom: 10px; }
+
+.billing-information-box .form .deadline .inputs { display: flex; }
+
+.billing-information-box .form .deadline .inputs .input { width: 29%; margin-right: 10px; }
+
+.billing-information-box .form .cart-number { margin-bottom: 21px; }
+
+.billing-information-box .form .owners-name { margin-bottom: 18px; }
+
+.billing-information-box .form .security-code { margin-bottom: 20px; }
+
+.billing-information-box .form .security-code .input { width: 47%; }
+
+.billing-information-box .form .label { font-size: 13px; line-height: 20px; font-weight: bold; color: #3C4147; margin: 0; padding-bottom: 5px; }
+
+.billing-information-box .form .input { background: #F0F3F5; width: 100%; padding: 18px 10px 15px 18px; border: none; border-radius: 10px; display: block; margin-bottom: 10px; }
+
+.billing-information-box .form .input.card-ico { background-position: calc(100% - 10px) 51%; background-repeat: no-repeat; background-image: url("../images/card.png"); background-size: 33px; }
+
+.billing-information-box .form .input::-webkit-input-placeholder { font-size: 13px; line-height: 20px; color: #8E99A6; }
+
+.billing-information-box .form .input::-moz-placeholder { font-size: 13px; line-height: 20px; color: #8E99A6; }
+
+.billing-information-box .form .input:-ms-input-placeholder { font-size: 13px; line-height: 20px; color: #8E99A6; }
+
+.billing-information-box .form .input::-ms-input-placeholder { font-size: 13px; line-height: 20px; color: #8E99A6; }
+
+.billing-information-box .form .input::placeholder { font-size: 13px; line-height: 20px; color: #8E99A6; }
+
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 
 body { background: #fff; font-family: 'Muller'; font-size: 12px; line-height: 15px; color: #8E99A6; }

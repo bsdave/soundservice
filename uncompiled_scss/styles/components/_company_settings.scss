@@ -56,7 +56,8 @@
       .settings-info {
         position: relative;
         margin-bottom: 20px;
-        .photo{
+
+        .photo {
           position: absolute;
           left: -70px;
           top: -7px;
@@ -153,6 +154,32 @@
 
         }
       }
+    }
+  }
+}
+
+@include tablet {
+  .settings-box {
+    .settings-head {
+      text-align: center;
+
+        .buttons-category {
+          margin-left: 25%;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          max-width: 292px;
+          margin-top: 10px;
+
+          .button {
+            width: 145px;
+            background: transparent;
+            margin: 0;
+            border: 1px solid #E1E6EC;
+          }
+        }
     }
   }
 }

@@ -24,24 +24,26 @@
     margin-right: -25px;
   }
 
-  .contacts {
-    .contact-blocks {
-      .row {
-        .col-5 {
-          padding-right: 0;
-        }
+  .second-card {
 
-        .col-7 {
-          padding-left: 0;
+    .row {
+      .col-6 {
+        padding-right: 0px;
+      }
+    }
+  }
 
-          .paragraph.right {
-            margin-left: 0;
-          }
-        }
+  .first-card {
+
+    .row {
+      .col-6 {
+        padding-right: 0px;
+        padding-left: 0px;
       }
     }
   }
 }
+
 
 .m-order-0 {
   order: 0;

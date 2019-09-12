@@ -1,0 +1,32 @@
+.connected-institution-box{
+  margin-top: 39px;
+  .big-title{
+    margin-bottom: 47px;
+  }
+  .connected-institution{
+    margin-bottom: 62px;
+    .right{
+      margin-left: -20px;
+    }
+    .name-institution{
+      margin-bottom: 15px;
+      .title{
+        margin: 0;
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
+    .registration-date{
+      margin-bottom: 15px;
+    }
+    .executor-name{
+      margin-bottom: 15px;
+      .description{
+        line-height: 20px;
+      }
+    }
+    .status-button{
+      margin-top: 20px;
+    }
+  }
+}

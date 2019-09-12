@@ -1,0 +1,168 @@
+.broadcast-point-cards {
+  margin-top: 20px;
+
+  .first-card {
+    margin-bottom: 15px;
+    margin-left: 24px;
+
+    .big-title {
+      margin-top: 0;
+    }
+
+    .card {
+      max-width: 135px;
+      height: 169px;
+      margin-top: 10px;
+      background: #4C535B;
+      border-radius: 10px;
+      padding: 20px 22px 7px 20px;
+      position: relative;
+
+      .card-body {
+        .title {
+          color: $color-white;
+          font-size: 13px;
+          line-height: 20px;
+          margin: 0;
+          padding-bottom: 7px;
+        }
+
+        .description {
+          color: #C3CCD7;
+          font-size: 11px;
+          line-height: 15px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .card-footer {
+        position: absolute;
+        bottom: 7px;
+        right: 17px;
+
+        .status-point {
+          margin-right: 16px;
+          font-weight: bold;
+          font-size: 9px;
+          line-height: 10px;
+          text-transform: uppercase;
+
+          &.on {
+            color: $color-green;
+            position: relative;
+
+            &:after {
+              content: '';
+              display: inline-block;
+              position: absolute;
+              right: -10px;
+              top: 1px;
+              background: $color-green;
+              width: 5px;
+              height: 5px;
+              border-radius: 50%;
+            }
+          }
+
+          &.off {
+            color: $color-red;
+            position: relative;
+
+            &:after {
+              content: '';
+              display: inline-block;
+              position: absolute;
+              right: -10px;
+              top: 1px;
+              background: $color-red;
+              width: 5px;
+              height: 5px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.second-card {
+  background: #4C535B;
+  border-radius: 10px;
+  padding: 18px 20px 0 20px;
+  margin-left: 23px;
+  margin-right: 15px;
+
+  .card{
+    .card-head {
+      text-align: center;
+      margin-bottom: 30px;
+
+      .title {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: bold;
+        color: $color-white;
+        margin: 0;
+        padding-bottom: 10px;
+      }
+
+      .description {
+        font-size: 9px;
+        line-height: 10px;
+        color: $color-green;
+        text-transform: uppercase;
+      }
+    }
+    .card-body{
+      position: relative;
+      margin-bottom: 17px;
+      &.on{
+        &:after{
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          right: 18px;
+          width: 5px;
+          height: 5px;
+          background: $color-green;
+          border-radius: 50%;
+        }
+      }
+
+      &.off{
+        &:after{
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          right: 18px;
+          width: 5px;
+          height: 5px;
+          background: $color-red;
+          border-radius: 50%;
+        }
+      }
+      .card-institution{
+        .title{
+          font-size: 13px;
+          line-height: 20px;
+          margin: 0;
+          padding-bottom: 10px;
+          font-weight: bold;
+          color: $color-white;
+        }
+        .description{
+          font-size: 11px;
+          line-height: 15px;
+          padding-bottom: 10px;
+          font-weight: bold;
+          color: #C3CCD7;
+        }
+      }
+    }
+  }
+
+}
+

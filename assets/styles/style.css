@@ -749,9 +749,8 @@ input[type="number"] { -moz-appearance: textfield; }
   .container { padding-left: 25px; padding-right: 25px; }
   .container.disable-on-mobile { padding-left: 0; padding-right: 0; overflow-x: hidden; }
   .row { margin-left: -25px; margin-right: -25px; }
-  .contacts .contact-blocks .row .col-5 { padding-right: 0; }
-  .contacts .contact-blocks .row .col-7 { padding-left: 0; }
-  .contacts .contact-blocks .row .col-7 .paragraph.right { margin-left: 0; } }
+  .second-card .row .col-6 { padding-right: 0px; }
+  .first-card .row .col-6 { padding-right: 0px; padding-left: 0px; } }
 
 .m-order-0 { order: 0; }
 
@@ -1199,6 +1198,10 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .settings-box .settings-body .settings .switch .slider.round:before { border-radius: 50%; }
 
+@media (min-width: 576px) { .settings-box .settings-head { text-align: center; }
+  .settings-box .settings-head .buttons-category { margin-left: 25%; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; max-width: 292px; margin-top: 10px; }
+  .settings-box .settings-head .buttons-category .button { width: 145px; background: transparent; margin: 0; border: 1px solid #E1E6EC; } }
+
 .settings-box.second { margin-top: 105px; }
 
 .settings-box.second .settings-head { margin-bottom: 25px; }
@@ -1212,6 +1215,84 @@ input[type="number"] { -moz-appearance: textfield; }
 .address-box .address-info .address .title { margin-top: 6px; font-size: 13px; line-height: 20px; }
 
 .address-box .address-info .edit-button .button { padding: 6px 0 6px 0; width: 144px; text-align: center; }
+
+.report-box { margin-top: 25px; }
+
+.report-box .report-body { margin-bottom: 40px; }
+
+.report-box .report-body .report .song-name { margin-top: 10px; margin-bottom: 10px; }
+
+.report-box .report-body .report .song-name .title { font-weight: bold; font-size: 13px; line-height: 20px; color: #3C4147; }
+
+.report-box .report-body .report .executor-info .sm-description { font-size: 13px; line-height: 20px; }
+
+.report-box .report-body .report .left { margin-left: 7px; }
+
+.report-box .report-body .report .right { margin-left: -7px; }
+
+.report-box .report-body .report .title { margin: 0; }
+
+.connected-institution-box { margin-top: 39px; }
+
+.connected-institution-box .big-title { margin-bottom: 47px; }
+
+.connected-institution-box .connected-institution { margin-bottom: 62px; }
+
+.connected-institution-box .connected-institution .right { margin-left: -20px; }
+
+.connected-institution-box .connected-institution .name-institution { margin-bottom: 15px; }
+
+.connected-institution-box .connected-institution .name-institution .title { margin: 0; font-size: 13px; line-height: 20px; }
+
+.connected-institution-box .connected-institution .registration-date { margin-bottom: 15px; }
+
+.connected-institution-box .connected-institution .executor-name { margin-bottom: 15px; }
+
+.connected-institution-box .connected-institution .executor-name .description { line-height: 20px; }
+
+.connected-institution-box .connected-institution .status-button { margin-top: 20px; }
+
+.broadcast-point-cards { margin-top: 20px; }
+
+.broadcast-point-cards .first-card { margin-bottom: 15px; margin-left: 24px; }
+
+.broadcast-point-cards .first-card .big-title { margin-top: 0; }
+
+.broadcast-point-cards .first-card .card { max-width: 135px; height: 169px; margin-top: 10px; background: #4C535B; border-radius: 10px; padding: 20px 22px 7px 20px; position: relative; }
+
+.broadcast-point-cards .first-card .card .card-body .title { color: #fff; font-size: 13px; line-height: 20px; margin: 0; padding-bottom: 7px; }
+
+.broadcast-point-cards .first-card .card .card-body .description { color: #C3CCD7; font-size: 11px; line-height: 15px; margin-bottom: 30px; }
+
+.broadcast-point-cards .first-card .card .card-footer { position: absolute; bottom: 7px; right: 17px; }
+
+.broadcast-point-cards .first-card .card .card-footer .status-point { margin-right: 16px; font-weight: bold; font-size: 9px; line-height: 10px; text-transform: uppercase; }
+
+.broadcast-point-cards .first-card .card .card-footer .status-point.on { color: #84CC45; position: relative; }
+
+.broadcast-point-cards .first-card .card .card-footer .status-point.on:after { content: ''; display: inline-block; position: absolute; right: -10px; top: 1px; background: #84CC45; width: 5px; height: 5px; border-radius: 50%; }
+
+.broadcast-point-cards .first-card .card .card-footer .status-point.off { color: #FF7373; position: relative; }
+
+.broadcast-point-cards .first-card .card .card-footer .status-point.off:after { content: ''; display: inline-block; position: absolute; right: -10px; top: 1px; background: #FF7373; width: 5px; height: 5px; border-radius: 50%; }
+
+.second-card { background: #4C535B; border-radius: 10px; padding: 18px 20px 0 20px; margin-left: 23px; margin-right: 15px; }
+
+.second-card .card .card-head { text-align: center; margin-bottom: 30px; }
+
+.second-card .card .card-head .title { font-size: 15px; line-height: 20px; font-weight: bold; color: #fff; margin: 0; padding-bottom: 10px; }
+
+.second-card .card .card-head .description { font-size: 9px; line-height: 10px; color: #84CC45; text-transform: uppercase; }
+
+.second-card .card .card-body { position: relative; margin-bottom: 17px; }
+
+.second-card .card .card-body.on:after { content: ''; display: inline-block; position: absolute; top: 0; right: 18px; width: 5px; height: 5px; background: #84CC45; border-radius: 50%; }
+
+.second-card .card .card-body.off:after { content: ''; display: inline-block; position: absolute; top: 0; right: 18px; width: 5px; height: 5px; background: #FF7373; border-radius: 50%; }
+
+.second-card .card .card-body .card-institution .title { font-size: 13px; line-height: 20px; margin: 0; padding-bottom: 10px; font-weight: bold; color: #fff; }
+
+.second-card .card .card-body .card-institution .description { font-size: 11px; line-height: 15px; padding-bottom: 10px; font-weight: bold; color: #C3CCD7; }
 
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 

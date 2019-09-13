@@ -29,6 +29,18 @@
     }
     .security-code{
       margin-bottom: 20px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 35px;
+        left: 53%;
+        display: inline-block;
+        width: 39px;
+        height: 25px;
+
+        background: url("../images/card-2.png") center no-repeat;
+      }
       .input{
         width: 47%;
       }

@@ -780,6 +780,10 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .title { font-family: 'Muller'; font-weight: bold; font-size: 15px; line-height: 20px; color: #3C4147; padding: 0; }
 
+.label { font-size: 13px; line-height: 20px; font-weight: bold; color: #3C4147; margin: 0; padding-bottom: 5px; }
+
+.input { background: #F0F3F5; width: 100%; padding: 18px 10px 15px 18px; border: none; border-radius: 10px; display: block; margin-bottom: 10px; }
+
 .slider-box { position: relative; margin-top: 0; margin-bottom: 50px; }
 
 .slider-box .slider .slide { background-size: cover; background-repeat: no-repeat; background-position: center; min-height: 451px; }
@@ -816,7 +820,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .header .active { background: #373C42; color: #fff; border-left: 3px solid #FFCF60; }
 
-.header .header-body { padding: 42px 0 50px 0; }
+.header .header-body { padding: 42px 0 10px 0; }
 
 .header .header-body .menu-toggle { width: 100%; display: flex; flex-direction: row; justify-content: space-between; transition: 200ms linear; }
 
@@ -1310,7 +1314,9 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .billing-information-box .form .owners-name { margin-bottom: 18px; }
 
-.billing-information-box .form .security-code { margin-bottom: 20px; }
+.billing-information-box .form .security-code { margin-bottom: 20px; position: relative; }
+
+.billing-information-box .form .security-code::after { content: ""; position: absolute; top: 35px; left: 53%; display: inline-block; width: 39px; height: 25px; background: url("../images/card-2.png") center no-repeat; }
 
 .billing-information-box .form .security-code .input { width: 47%; }
 
@@ -1329,6 +1335,26 @@ input[type="number"] { -moz-appearance: textfield; }
 .billing-information-box .form .input::-ms-input-placeholder { font-size: 13px; line-height: 20px; color: #8E99A6; }
 
 .billing-information-box .form .input::placeholder { font-size: 13px; line-height: 20px; color: #8E99A6; }
+
+.activation-account-box .activation-account-head .card { border: 1px solid #E1E6EC; border-radius: 10px; }
+
+.as.opened-modal { position: absolute; z-index: 15; width: 100%; height: 100%; background: #000; opacity: 0.5; margin-top: -100px; }
+
+.modal-box { position: absolute; z-index: 20; border-radius: 10px; top: -9999px; right: 0px; transition: 300ms; width: 100%; background: black; }
+
+.modal-box .modal-head { text-align: center; }
+
+.modal-box .modal-head .big-title { margin-bottom: 16px; }
+
+.modal-box .modal-body { opacity: 1; }
+
+.modal-box .modal-body .form .input-block { margin-bottom: 21px; }
+
+.modal-box .modal-close { display: block; content: ""; height: 16px; width: 16px; background: url("../images/close.svg") center no-repeat; cursor: pointer; position: absolute; top: 20px; right: 14px; }
+
+.modal-box .modal { position: relative; padding: 34px 17px 28px 24px; }
+
+.modal-box.opened-modal { top: 98px; background: #fff; }
 
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 

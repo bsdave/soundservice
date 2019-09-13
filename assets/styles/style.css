@@ -1338,7 +1338,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .activation-account-box .activation-account-head .card { border: 1px solid #E1E6EC; border-radius: 10px; }
 
-.as.opened-modal { position: absolute; z-index: 15; width: 100%; height: 100%; background: #000; opacity: 0.5; margin-top: -100px; }
+.background-opacity.opened-modal { position: absolute; z-index: 15; width: 100%; height: 100%; background: #000; opacity: 0.5; margin-top: -100px; }
 
 .modal-box { position: absolute; z-index: 20; border-radius: 10px; top: -9999px; right: 0px; transition: 300ms; width: 100%; background: black; }
 

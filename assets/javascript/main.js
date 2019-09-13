@@ -4,7 +4,7 @@ $(function () {
     });
 
     $('.modal-close').click(function () {
-        $('.modal-box, .as').removeClass('opened-modal');
+        $('.modal-box, .background-opacity').removeClass('opened-modal');
     });
 
 

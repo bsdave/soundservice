@@ -13,9 +13,6 @@
     background: $color-white;
     transition: all 1s;
     z-index: 4;
-    &:hover {
-      cursor: pointer;
-    }
 
     &::before {
       content: "";
@@ -76,13 +73,13 @@
 
     &:focus ~ .search {
       right: -250px;
-      background: $color-white;
       z-index: 6;
 
       &::before {
         top: 0;
         left: 0;
         width: 25px;
+        background: $color-red;
       }
 
       &::after {

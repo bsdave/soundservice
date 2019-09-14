@@ -10,6 +10,8 @@
           integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
   <script src="assets/javascript/slick/slick.js"></script>
   <script src="assets/javascript/main.js"></script>
+  <script src="assets/javascript/jquery.steps.js"></script>
+  <script src="assets/javascript/wizard.js"></script>
   <title>Music Schedule</title>
 </head>
 
@@ -68,49 +70,164 @@
 <div class="background-opacity opened-modal">
 </div>
 
-<div class="modal-box  success-modal opened-modal">
+<div class="modal-box opened-modal">
   <div class="modal">
-    <div class="modal-head">
-      <h3 class="big-title">Добавить Админа</h3>
-    </div>
 
     <div class="modal-body">
-      <form class="form">
-        <div class="input-block">
-          <p class="label">Email</p>
-          <input class="input" type="text" placeholder="soundservice@gmail.com">
-        </div>
+      <div class="wrapper wrapper-1">
+        <form action="" id="wizard">
+          <!-- SECTION 1 -->
+          <h2></h2>
+          <section>
+            <div class="inner">
 
-        <div class="input-block">
-          <p class="label">Права доступа</p>
-          <input class="input" type="text" placeholder="Администратор">
-        </div>
+              <div class="form-content">
+                <div class="form-header">
+                  <h3 class="big-title">Регистрация</h3>
+                  <p class="description">Попробуйте без ограничений, на 7 дней бесплатно.</p>
+                </div>
 
-        <div class="input-block">
-          <p class="label">Имя</p>
-          <input class="input" type="text" placeholder="Андрей">
-        </div>
+                <div class="form-row">
+                  <div class="form-holder">
+                    <p class="title">Название компании</p>
+                    <input type="text" placeholder="ГазмяспромСтарт" class="input">
+                  </div>
+                  <div class="form-holder">
+                    <p class="title">Тип бизнеса</p>
+                    <input type="text" placeholder="Музыка" class="input">
+                  </div>
+                </div>
 
-        <div class="input-block">
-          <p class="label">Фамилия</p>
-          <input class="input" type="text" placeholder="Андреевич">
-        </div>
+                <div class="form-row">
+                  <div class="form-holder">
+                    <p class="title">Имя</p>
+                    <input type="text" placeholder="Максим" class="input">
+                  </div>
+                  <div class="form-holder">
+                    <p class="title">Почта</p>
+                    <input type="text" placeholder="soundservice@gmail.com" class="input">
+                  </div>
+                </div>
 
-        <div class="input-block">
-          <p class="label">Пароль</p>
-          <input class="input" type="text" placeholder=" *  *  *  *  *  *  *  *  *  *  *  *">
-        </div>
+                <div class="form-row">
+                  <div class="form-holder">
+                    <p class="title">Пароль</p>
+                    <input type="text" placeholder="soundservice@gmail.com" class="input">
+                  </div>
 
-        <div class="update-btn">
-          <button class="button">Обновить</button>
-        </div>
+                </div>
 
-      </form>
+
+                <div class="checkbox">
+                  <input class="input-checkbox" type="checkbox" id="checkbox">
+                  <label for="checkbox">я согласен на обработку данных в соответствии с законодательством Республики
+                    Казахстан
+                    и политикой конфединциальности</label>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 2 -->
+
+          <h2></h2>
+          <section>
+            <div class="inner">
+
+              <div class="form-content">
+                <div class="form-header">
+                  <h3 class="big-title">Адрес</h3>
+                  <p class="description">Попробуйте без ограничений, на 7 дней бесплатно.</p>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-holder">
+                    <p class="title">Страна</p>
+                    <input type="text" placeholder="Казахстан" class="input">
+                  </div>
+                  <div class="form-holder">
+                    <p class="title">Казахстан</p>
+                    <input type="text" placeholder="Алматы" class="input">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-holder">
+                    <p class="title">Первый адрес</p>
+                    <input type="text" placeholder="ул. Козаченков, 1" class="input">
+                  </div>
+                  <div class="form-holder">
+                    <p class="title">Второй адрес</p>
+                    <input type="text" placeholder="(не обязательно)" class="input">
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </section>
+
+
+          <!-- SECTION 3 -->
+
+
+          <h2></h2>
+          <section>
+            <div class="inner">
+
+              <div class="form-content">
+                <div class="form-header success">
+                  <span class="check-2"></span>
+                  <h3 class="big-title">Активация</h3>
+                  <p class="description">Поздравляем! Регистрация прошла успешно.</p>
+                </div>
+
+                <div class="form-row">
+                  <div class="row">
+
+                    <div class="col-6">
+                      <div class="form-holder img-block">
+                        <img class="img group-1" src="assets/images/group-1.png" alt="">
+                        <h3 class="title">Пройти обучение</h3>
+                        <p class="description">Первый запуск</p>
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="form-holder img-block" id="btn">
+                        <img class="img group-2" src="assets/images/group-2.png" alt="">
+                        <h3 class="title">Скачать плеер</h3>
+                        <p class="description">Windows 7, 10, OS X</p>
+
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="form-holder img-block">
+                        <img class="img group-3" src="assets/images/group-3.png" alt="">
+                        <h3 class="title">Личный кабинет</h3>
+                        <p class="description">Перейти</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        </form>
+      </div>
+
     </div>
+
 
     <span class="modal-close"></span>
   </div>
-
 </div>
 
 

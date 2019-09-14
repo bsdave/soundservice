@@ -32,6 +32,16 @@
       margin-bottom: 16px;
     }
   }
+  .modal-footer{
+    margin-top: 40px;
+    text-align: center;
+    .button{
+      font-size: 12px;
+      line-height: 20px;
+      padding: 10px 0;
+
+    }
+  }
 
   .modal-body {
     opacity: 1;
@@ -91,7 +101,7 @@
   }
 
   &.opened-modal {
-    top: 49%;
+    top: 35%;
     background: #fff;
   }
 }

@@ -3,6 +3,10 @@ $(function () {
         $('.header').toggleClass('opened');
     });
 
+    $('#btn').click(function () {
+        $('.modal-box, .background-opacity').toggleClass('opened-modal');
+    });
+
     $('.modal-close').click(function () {
         $('.modal-box, .background-opacity').removeClass('opened-modal');
     });

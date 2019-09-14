@@ -1,5 +1,5 @@
-.background-opacity{
-  &.opened-modal{
+.background-opacity {
+  &.opened-modal {
     position: absolute;
     z-index: 15;
     width: 100%;
@@ -10,15 +10,18 @@
   }
 
 }
+
 .modal-box {
   position: absolute;
   z-index: 20;
   border-radius: 10px;
   top: -9999px;
-  right: 0px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   transition: 300ms;
 
-  width: 100%;
+  width: 330px;
 
   background: black;
 
@@ -32,8 +35,38 @@
 
   .modal-body {
     opacity: 1;
-    .form{
-      .input-block{
+
+    .templates {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+
+      &.active {
+        position: relative;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          right: 18px;
+          width: 61px;
+          height: 61px;
+          background: $color-yellow;
+          border-radius: 50%;
+          z-index: 10;
+        }
+      }
+
+      .template-image {
+        padding-bottom: 9px;
+        padding-right: 9px;
+      }
+    }
+
+    .form {
+      .input-block {
         margin-bottom: 21px;
       }
     }
@@ -58,7 +91,7 @@
   }
 
   &.opened-modal {
-    top: 98px;
+    top: 49%;
     background: #fff;
   }
 }

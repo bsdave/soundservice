@@ -99,39 +99,38 @@
 
     <div class="activation-account-head">
 
+
       <div class="row">
         <div class="col-12">
 
           <div class="card">
-            <div class="card-info">
-              <div class="card-head">
-                <p class="sm-description">Hawthorne, 3501 Jack Northrop Ave, Ste 85947</p>
-                <h3 class="title">Charelton</h3>
-              </div>
+
+            <div class="card-head">
+              <p class="sm-description">Hawthorne, 3501 Jack Northrop Ave, Ste 85947</p>
+              <h3 class="title">Charelton</h3>
             </div>
           </div>
 
 
           <div class="card">
-            <div class="card-info">
-              <div class="card-head">
-                <p class="sm-description">Credit card</p>
-                <h3 class="title">Visa</h3>
+            <div class="card-head">
+              <p class="sm-description">Credit card</p>
+                <button class="button transparent">изменить</button>
+              <h3 class="title">Visa</h3>
+            </div>
+
+            <div class="card-body">
+              <div class="card-info">
+                <span class="sm-description left">Card number</span>
+                <span class="sm-description right">**** **** **** 5465</span>
               </div>
-
-              <div class="card-body">
-                <div class="asd">
-                  <span class="sm-description">Card number</span>
-                  <span class="sm-description">**** **** **** 5465</span>
-                </div>
-                <div class="asd">
-                  <span class="sm-description">Expiration date</span>
-                  <span class="sm-description">07/23</span>
-                </div>
-
+              <div class="card-info">
+                <span class="sm-description left">Expiration date</span>
+                <span class="sm-description right">07/23</span>
               </div>
 
             </div>
+
           </div>
 
 
@@ -139,79 +138,83 @@
       </div>
 
     </div>
+  </div>
 
-    <div class="activation-account-body">
-      <div class="container">
-        <div class="services">
-          <p class="sm-description">Выберите услуги для оплаты</p>
-          <div class="row">
-
-            <div class="col-12">
-              <div class="service">
-                <span>1 месяц</span>
-                <span>25 000 KZT</span>
-                <p class="sm-description">Итого к оплате 25 000 за 1 мес.</p>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="service">
-                <span>1 месяц</span>
-                <span>50 000 KZT</span>
-                <p class="sm-description">Итого к оплате 25 000 за 1 мес.</p>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="service">
-                <span>2 месяц</span>
-                <span>71 250 KZT</span>
-                <p class="sm-description">Итого к оплате 25 000 за 1 мес.</p>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="service">
-                <span>3 месяц</span>
-                <span>135 000 KZT</span>
-                <p class="sm-description">Итого к оплате 25 000 за 1 мес.</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="activation-account-footer">
-
-      <div class="container">
+  <div class="activation-account-body">
+    <div class="container">
+      <div class="services">
+        <p class="sm-description">Выберите услуги для оплаты</p>
         <div class="row">
+
           <div class="col-12">
-            <div>
-              <span>Всего к оплате</span>
-              <span>135 000 KZT</span>
+            <div class="service">
+              <span class="check"></span>
+              <span class="description">1 месяц</span>
+              <span class="description right">25 000 KZT</span>
+              <p class="sm-description">Итого к оплате 25 000 за 1 мес.</p>
             </div>
-
-            <div class="checkbox">
-              <input type="checkbox" id="checkbox">
-              <label for="checkbox">Я согласен с общими условиями и политикой конфиденциальности</label>
-            </div>
-
-            <div class="make-payment">
-              <div class="button">Внести платеж</div>
-            </div>
-
-
           </div>
+
+          <div class="col-12">
+            <div class="service">
+              <span class="check"></span>
+              <span class="description">2 месяц</span>
+              <span class="description right">50 000 KZT</span>
+              <p class="sm-description">Итого к оплате 25 000 за 1 мес.</p>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="service sale">
+              <span class="check"></span>
+              <span class="description">3 месяца</span>
+              <span class="description right">71 250 KZT</span>
+              <p class="sm-description">Итого к оплате 25 000 за 1 мес.</p>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="service sale">
+              <span class="check active"></span>
+              <span class="description">4 месяца</span>
+              <span class="description right">135 000 KZT</span>
+              <p class="sm-description">Итого к оплате 25 000 за 1 мес.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="activation-account-footer">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="final-price">
+            <span class="description">Всего к оплате</span>
+            <span class="description right">135 000 KZT</span>
+          </div>
+
+          <div class="checkbox">
+            <input class="input-checkbox" type="checkbox" id="checkbox">
+            <label for="checkbox">Я согласен с общими условиями и политикой конфиденциальности</label>
+          </div>
+
+          <div class="make-payment">
+            <div class="button">Внести платеж</div>
+          </div>
+
+
         </div>
       </div>
-
-
     </div>
+
 
   </div>
+
 </div>
 
 

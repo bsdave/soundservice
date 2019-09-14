@@ -1,8 +1,194 @@
 .activation-account-box {
+  .big-title {
+    margin-top: -7px;
+  }
+
   .activation-account-head {
     .card {
       border: 1px solid #E1E6EC;
       border-radius: 10px;
+      margin-bottom: 20px;
+      margin-top: 14px;
+      padding: 16px 10px 14px 10px;
+
+      .card-head {
+        .button{
+          float: right;
+          width: 97px;
+          text-align: center;
+          padding: 7px 1px 5px 7px;
+          margin-top: -28px;
+        }
+        .sm-description {
+          font-size: 13px;
+          line-height: 20px;
+          color: #8E99A6;
+          margin-bottom: 4px;
+        }
+
+        .title {
+          line-height: 25px;
+          margin: 0;
+        }
+      }
+
+      .card-body {
+        .card-info {
+          margin-top: 10px;
+
+          .sm-description {
+            font-size: 13px;
+
+            &.right {
+              float: right;
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+  .activation-account-body {
+    margin-right: -13px;
+    margin-left: -8px;
+    margin-bottom: 5px;
+
+    .services {
+      border: 1px solid #E1E6EC;
+      border-radius: 20px;
+      padding: 22px 10px 0 11px;
+      margin-bottom: 5px;
+
+      .sm-description {
+        margin-bottom: 21px;
+        font-size: 13px;
+        line-height: 20px;
+      }
+
+      .service {
+        margin-left: 50px;
+        margin-bottom: 20px;
+        position: relative;
+        border-bottom: 1px solid #D8D8D8;
+
+        &.sale{
+          &:after{
+            content: '5%';
+            display: inline-block;
+            position: absolute;
+            top: -15px;
+            right: -25px;
+            padding: 5px;
+            color: #fff;
+
+            background-position: center;
+            background: $color-red;
+            border-radius: 50%;
+
+          }
+        }
+
+        .check {
+          position: relative;
+
+          &.active {
+            &:after {
+              content: '';
+              position: absolute;
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              top: -4px;
+              left: -50px;
+              border-radius: 50%;
+              border: none;
+              background: $color-yellow;
+              z-index: 0;
+            }
+
+            &:before {
+              content: '';
+              position: absolute;
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              top: -6px;
+              left: -50px;
+              z-index: 100;
+              background: url('../images/check.svg') center no-repeat;
+              filter: brightness(0) invert(1);
+            }
+          }
+
+
+          &:after {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            top: -4px;
+            left: -50px;
+            border-radius: 50%;
+            border: 1px solid #D8D8D8;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            top: -6px;
+            left: -50px;
+            background: url('../images/check.svg') center no-repeat;
+          }
+        }
+
+
+        .description {
+          font-size: 13px;
+          line-height: 20px;
+          font-weight: bold;
+          color: #3C4147;
+
+          &.right {
+            margin-right: 10px;
+            float: right
+          }
+        }
+
+        .sm-description {
+          font-size: 13px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .activation-account-footer {
+
+    .final-price {
+      margin-bottom: 9px;
+
+
+      .description {
+        font-size: 13px;
+        line-height: 20px;
+        color: #3C4147;
+        font-weight: bold;
+        margin: 20px 0;
+        margin-left: 12px;
+
+        &.right {
+          margin-left: 66px;
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: bold;
+        }
+      }
     }
   }
 }

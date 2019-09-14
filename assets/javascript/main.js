@@ -7,11 +7,6 @@ $(function () {
         $('.modal-box, .background-opacity').removeClass('opened-modal');
     });
 
-
-    $('.dropdown').click(function () {
-        $(this).toggleClass('active');
-    });
-
     $('.points-body .point').on('click', function () {
         $(this).toggleClass('opened');
     });

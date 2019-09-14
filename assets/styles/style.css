@@ -1336,11 +1336,57 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .billing-information-box .form .input::placeholder { font-size: 13px; line-height: 20px; color: #8E99A6; }
 
-.activation-account-box .activation-account-head .card { border: 1px solid #E1E6EC; border-radius: 10px; }
+.activation-account-box .big-title { margin-top: -7px; }
+
+.activation-account-box .activation-account-head .card { border: 1px solid #E1E6EC; border-radius: 10px; margin-bottom: 20px; margin-top: 14px; padding: 16px 10px 14px 10px; }
+
+.activation-account-box .activation-account-head .card .card-head .button { float: right; width: 97px; text-align: center; padding: 7px 1px 5px 7px; margin-top: -28px; }
+
+.activation-account-box .activation-account-head .card .card-head .sm-description { font-size: 13px; line-height: 20px; color: #8E99A6; margin-bottom: 4px; }
+
+.activation-account-box .activation-account-head .card .card-head .title { line-height: 25px; margin: 0; }
+
+.activation-account-box .activation-account-head .card .card-body .card-info { margin-top: 10px; }
+
+.activation-account-box .activation-account-head .card .card-body .card-info .sm-description { font-size: 13px; }
+
+.activation-account-box .activation-account-head .card .card-body .card-info .sm-description.right { float: right; }
+
+.activation-account-box .activation-account-body { margin-right: -13px; margin-left: -8px; margin-bottom: 5px; }
+
+.activation-account-box .activation-account-body .services { border: 1px solid #E1E6EC; border-radius: 20px; padding: 22px 10px 0 11px; margin-bottom: 5px; }
+
+.activation-account-box .activation-account-body .services .sm-description { margin-bottom: 21px; font-size: 13px; line-height: 20px; }
+
+.activation-account-box .activation-account-body .services .service { margin-left: 50px; margin-bottom: 20px; position: relative; border-bottom: 1px solid #D8D8D8; }
+
+.activation-account-box .activation-account-body .services .service.sale:after { content: '5%'; display: inline-block; position: absolute; top: -15px; right: -25px; padding: 5px; color: #fff; background-position: center; background: #FF7373; border-radius: 50%; }
+
+.activation-account-box .activation-account-body .services .service .check { position: relative; }
+
+.activation-account-box .activation-account-body .services .service .check.active:after { content: ''; position: absolute; display: inline-block; width: 40px; height: 40px; top: -4px; left: -50px; border-radius: 50%; border: none; background: #FFCF60; z-index: 0; }
+
+.activation-account-box .activation-account-body .services .service .check.active:before { content: ''; position: absolute; display: inline-block; width: 40px; height: 40px; top: -6px; left: -50px; z-index: 100; background: url("../images/check.svg") center no-repeat; -webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1); }
+
+.activation-account-box .activation-account-body .services .service .check:after { content: ''; position: absolute; display: inline-block; width: 40px; height: 40px; top: -4px; left: -50px; border-radius: 50%; border: 1px solid #D8D8D8; }
+
+.activation-account-box .activation-account-body .services .service .check:before { content: ''; position: absolute; display: inline-block; width: 40px; height: 40px; top: -6px; left: -50px; background: url("../images/check.svg") center no-repeat; }
+
+.activation-account-box .activation-account-body .services .service .description { font-size: 13px; line-height: 20px; font-weight: bold; color: #3C4147; }
+
+.activation-account-box .activation-account-body .services .service .description.right { margin-right: 10px; float: right; }
+
+.activation-account-box .activation-account-body .services .service .sm-description { font-size: 13px; line-height: 20px; }
+
+.activation-account-box .activation-account-footer .final-price { margin-bottom: 9px; }
+
+.activation-account-box .activation-account-footer .final-price .description { font-size: 13px; line-height: 20px; color: #3C4147; font-weight: bold; margin: 20px 0; margin-left: 12px; }
+
+.activation-account-box .activation-account-footer .final-price .description.right { margin-left: 66px; font-size: 15px; line-height: 20px; font-weight: bold; }
 
 .background-opacity.opened-modal { position: absolute; z-index: 15; width: 100%; height: 100%; background: #000; opacity: 0.5; margin-top: -100px; }
 
-.modal-box { position: absolute; z-index: 20; border-radius: 10px; top: -9999px; right: 0px; transition: 300ms; width: 100%; background: black; }
+.modal-box { position: absolute; z-index: 20; border-radius: 10px; top: -9999px; left: 50%; margin-right: -50%; transform: translate(-50%, -50%); transition: 300ms; width: 330px; background: black; }
 
 .modal-box .modal-head { text-align: center; }
 
@@ -1348,13 +1394,35 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .modal-box .modal-body { opacity: 1; }
 
+.modal-box .modal-body .templates { display: flex; flex-direction: row; flex-wrap: wrap; position: relative; }
+
+.modal-box .modal-body .templates.active { position: relative; }
+
+.modal-box .modal-body .templates.active:after { content: ''; display: inline-block; position: absolute; bottom: 0; right: 18px; width: 61px; height: 61px; background: #FFCF60; border-radius: 50%; z-index: 10; }
+
+.modal-box .modal-body .templates .template-image { padding-bottom: 9px; padding-right: 9px; }
+
 .modal-box .modal-body .form .input-block { margin-bottom: 21px; }
 
 .modal-box .modal-close { display: block; content: ""; height: 16px; width: 16px; background: url("../images/close.svg") center no-repeat; cursor: pointer; position: absolute; top: 20px; right: 14px; }
 
 .modal-box .modal { position: relative; padding: 34px 17px 28px 24px; }
 
-.modal-box.opened-modal { top: 98px; background: #fff; }
+.modal-box.opened-modal { top: 49%; background: #fff; }
+
+.checkbox { font-size: 13px; line-height: 20px; margin-bottom: 20px; margin-left: 12px; }
+
+.checkbox input[type="checkbox"]:checked, .checkbox [type="checkbox"]:not(:checked) { position: absolute; left: -9999px; }
+
+.checkbox input[type="checkbox"]:checked + label, .checkbox input[type="checkbox"]:not(:checked) + label { position: relative; padding-left: 28px; margin: 10px 0 5px 0; cursor: pointer; font-size: 12px; display: inline-block; color: #8E99A6; }
+
+.checkbox input[type="checkbox"]:checked + label:before, .checkbox input[type="checkbox"]:not(:checked) + label:before { content: ''; position: absolute; left: 0; top: 0; width: 18px; height: 18px; border: 2px solid #8E99A6; border-radius: 5px; background: #fff; }
+
+.checkbox input[type="checkbox"]:checked + label:after, .checkbox input[type="checkbox"]:not(:checked) + label:after { content: ''; width: 10px; height: 10px; border-radius: 2px; background: #8E99A6; position: absolute; top: 4px; left: 4px; transition: all 0.2s ease; }
+
+.checkbox input[type="checkbox"]:not(:checked) + label:after { opacity: 0; transform: scale(0); }
+
+.checkbox input[type="checkbox"]:checked + label:after { opacity: 1; transform: scale(1); }
 
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 

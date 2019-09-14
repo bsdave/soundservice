@@ -1,0 +1,199 @@
+.finance-information-box {
+  .big-title {
+    margin-top: -8px;
+    margin-bottom: 18px;
+  }
+
+  .finance-info {
+    .finance-head {
+      margin-bottom: 18px;
+
+      .title {
+        margin-left: 33px;
+        position: relative;
+        margin-bottom: 0;
+        padding-bottom: 8px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          top: 0;
+          left: -36px;
+          width: 26px;
+          height: 18px;
+          background: url('../images/finance.svg') center no-repeat;
+        }
+      }
+
+      .description {
+        .bold {
+          font-weight: bold;
+        }
+      }
+
+      .balance {
+        text-align: center;
+        background: #FAFAFA;
+        padding: 20px 0;
+        font-weight: bold;
+        color: #3C4147;
+      }
+    }
+
+    .finance-body {
+      margin-bottom: 36px;
+
+      .description {
+        &.active {
+          margin-left: 12px;
+          position: relative;
+          margin-bottom: 5px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background: $color-green;
+            border-radius: 50%;
+            top: 5px;
+            left: -15px;
+          }
+        }
+
+        &.bold {
+          font-weight: bold;
+        }
+      }
+
+      .link {
+        font-weight: bold;
+        color: #8E99A6;
+      }
+    }
+
+    .finance-footer {
+      margin-bottom: 57px;
+
+      .title {
+        position: relative;
+        margin-left: 27px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          top: 0;
+          left: -30px;
+          width: 18px;
+          height: 18px;
+          background: url('../images/points.svg') center no-repeat;
+        }
+      }
+
+
+      .point {
+        &.zero {
+          position: relative;
+          margin-left: 30px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            top: -10px;
+            left: -32px;
+            width: 18px;
+            height: 30px;
+            background: url('../images/zero.svg') center no-repeat;
+          }
+        }
+
+        &.one {
+          position: relative;
+          margin-left: 30px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            top: -10px;
+            left: -32px;
+            width: 12px;
+            height: 30px;
+            background: url('../images/one.svg') center no-repeat;
+          }
+        }
+
+      }
+    }
+  }
+
+  .billing-information {
+    margin-bottom: 58px;
+
+    .billing-information-head {
+      margin-bottom: 33px;
+      .title {
+        font-size: 13px;
+        margin: 0;
+        padding-bottom: 5px;
+      }
+
+      .button {
+        width: 159px;
+        font-size: 11px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        Color: $color-white;
+        padding: 5px 0;
+        margin-top: 11px;
+      }
+    }
+    .billing-information-body{
+      .card-info{
+        margin-bottom: 32px;
+        .title{
+          font-size: 13px;
+          margin: 0;
+          padding-bottom: 6px;
+        }
+        .button{
+          text-align: center;
+          width: 102px;
+          line-height: 20px;
+          margin-top: 12px;
+          padding: 3px 0px 4px 0px;
+
+        }
+      }
+    }
+
+  }
+
+  .transaction-history {
+    .history-card {
+      .card {
+        margin-bottom: 30px;
+        .details-link {
+          color: #8E99A6;
+        }
+        .button{
+          width: 80px;
+          font-size: 12px;
+          line-height: 15px;
+          padding: 5px 3px 5px 3px;
+          text-transform: capitalize;
+          margin-top: 15px;
+          margin-left: 20px;
+          &.danger{
+            color: $color-white;
+            background: $color-red;
+          }
+        }
+      }
+    }
+  }
+}

@@ -745,6 +745,8 @@ input[type="number"] { -moz-appearance: textfield; }
 @font-face { font-family: 'Muller'; src: url("../fonts/MullerBold.eot"); /* IE9 Compat Modes */ src: url("../fonts/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold.woff2") format("woff2"), url("../fonts/MullerBold.woff") format("woff"), url("../fonts/MullerBold.ttf") format("truetype"), url("../fonts/MullerBold.svg#svgFontName") format("svg"), url("../fonts/MullerBold.otf") format("openType"); font-weight: bold; }
 
 @media (max-width: 540px) { div[class^="col"] { padding-left: 25px; padding-right: 25px; }
+  div[class^="col"].disable-on-mobile { padding-left: 23px; padding-right: 0; }
+  div[class^="col"].disable-on-mobile-sm { padding-left: 0; padding-right: 0; }
   .mobile-dn { display: none; }
   .container { padding-left: 25px; padding-right: 25px; }
   .container.disable-on-mobile { padding-left: 0; padding-right: 0; overflow-x: hidden; }
@@ -884,7 +886,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .playlist-sliders-box .playlist-slider { margin-bottom: 10px; }
 
-.playlist-sliders-box .playlist-slider .playlist .playlist-preview { position: relative; background-repeat: no-repeat; width: 100%; height: 127px; padding: 20px; margin-bottom: 14px; }
+.playlist-sliders-box .playlist-slider .playlist .playlist-preview { position: relative; background-repeat: no-repeat; width: 100%; height: 140px; padding: 20px; margin-bottom: 14px; }
 
 .playlist-sliders-box .playlist-slider .playlist .title { margin-bottom: 5px; }
 
@@ -896,7 +898,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .settings-button { position: absolute; top: -10px; left: 0; display: inline-block; width: 53px; height: 53px; background: url("../images/info-btn.svg") center no-repeat; }
 
-.add-playlist { display: inline-block; position: absolute; top: 50%; left: 40%; margin-right: -50%; background: #fff; border-radius: 50%; width: 47px; height: 47px; background: url("../images/plus.svg") center no-repeat, #fff; }
+.add-playlist { display: inline-block; position: absolute; top: 40%; left: 40%; margin-right: -50%; background: #fff; border-radius: 50%; width: 47px; height: 47px; background: url("../images/plus.svg") center no-repeat, #fff; }
 
 .playlist-creation-block { text-align: center; }
 
@@ -922,7 +924,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .players .players-body .player .player-download-window .os.x { color: #02B7F1; }
 
-@media (min-width: 576px) { .players { width: 500px; margin-left: 5%; } }
+@media (min-width: 576px) { .players { width: 500px; margin-left: 8%; } }
 
 .category-box .categories .category-menu { display: inline-flex; flex-wrap: wrap; }
 
@@ -980,7 +982,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .playlist-creation-block .playlist-creation-body .description { padding: 0 15px; margin-bottom: 12px; }
 
-@media (min-width: 576px) { .playlist-creation-block { width: 500px; margin-left: 15%; } }
+@media (min-width: 576px) { .playlist-creation-block { width: 500px; margin-left: 18%; } }
 
 .points-box { margin-bottom: 56px; }
 
@@ -1202,8 +1204,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .settings-box .settings-body .settings .switch .slider.round:before { border-radius: 50%; }
 
-@media (min-width: 576px) { .settings-box .settings-head { text-align: center; }
-  .settings-box .settings-head .buttons-category { margin-left: 25%; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; max-width: 292px; margin-top: 10px; }
+@media (min-width: 576px) { .settings-box .settings-head .buttons-category { border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; max-width: 292px; margin-top: 10px; }
   .settings-box .settings-head .buttons-category .button { width: 145px; background: transparent; margin: 0; border: 1px solid #E1E6EC; } }
 
 .settings-box.second { margin-top: 105px; }
@@ -1423,6 +1424,64 @@ input[type="number"] { -moz-appearance: textfield; }
 .checkbox input[type="checkbox"]:not(:checked) + label:after { opacity: 0; transform: scale(0); }
 
 .checkbox input[type="checkbox"]:checked + label:after { opacity: 1; transform: scale(1); }
+
+.finance-information-box .big-title { margin-top: -8px; margin-bottom: 18px; }
+
+.finance-information-box .finance-info .finance-head { margin-bottom: 18px; }
+
+.finance-information-box .finance-info .finance-head .title { margin-left: 33px; position: relative; margin-bottom: 0; padding-bottom: 8px; }
+
+.finance-information-box .finance-info .finance-head .title:after { content: ''; position: absolute; display: inline-block; top: 0; left: -36px; width: 26px; height: 18px; background: url("../images/finance.svg") center no-repeat; }
+
+.finance-information-box .finance-info .finance-head .description .bold { font-weight: bold; }
+
+.finance-information-box .finance-info .finance-head .balance { text-align: center; background: #FAFAFA; padding: 20px 0; font-weight: bold; color: #3C4147; }
+
+.finance-information-box .finance-info .finance-body { margin-bottom: 36px; }
+
+.finance-information-box .finance-info .finance-body .description.active { margin-left: 12px; position: relative; margin-bottom: 5px; }
+
+.finance-information-box .finance-info .finance-body .description.active:after { content: ''; position: absolute; display: inline-block; width: 6px; height: 6px; background: #84CC45; border-radius: 50%; top: 5px; left: -15px; }
+
+.finance-information-box .finance-info .finance-body .description.bold { font-weight: bold; }
+
+.finance-information-box .finance-info .finance-body .link { font-weight: bold; color: #8E99A6; }
+
+.finance-information-box .finance-info .finance-footer { margin-bottom: 57px; }
+
+.finance-information-box .finance-info .finance-footer .title { position: relative; margin-left: 27px; }
+
+.finance-information-box .finance-info .finance-footer .title:after { content: ''; position: absolute; display: inline-block; top: 0; left: -30px; width: 18px; height: 18px; background: url("../images/points.svg") center no-repeat; }
+
+.finance-information-box .finance-info .finance-footer .point.zero { position: relative; margin-left: 30px; }
+
+.finance-information-box .finance-info .finance-footer .point.zero:after { content: ''; position: absolute; display: inline-block; top: -10px; left: -32px; width: 18px; height: 30px; background: url("../images/zero.svg") center no-repeat; }
+
+.finance-information-box .finance-info .finance-footer .point.one { position: relative; margin-left: 30px; }
+
+.finance-information-box .finance-info .finance-footer .point.one:after { content: ''; position: absolute; display: inline-block; top: -10px; left: -32px; width: 12px; height: 30px; background: url("../images/one.svg") center no-repeat; }
+
+.finance-information-box .billing-information { margin-bottom: 58px; }
+
+.finance-information-box .billing-information .billing-information-head { margin-bottom: 33px; }
+
+.finance-information-box .billing-information .billing-information-head .title { font-size: 13px; margin: 0; padding-bottom: 5px; }
+
+.finance-information-box .billing-information .billing-information-head .button { width: 159px; font-size: 11px; line-height: 20px; letter-spacing: 1px; Color: #fff; padding: 5px 0; margin-top: 11px; }
+
+.finance-information-box .billing-information .billing-information-body .card-info { margin-bottom: 32px; }
+
+.finance-information-box .billing-information .billing-information-body .card-info .title { font-size: 13px; margin: 0; padding-bottom: 6px; }
+
+.finance-information-box .billing-information .billing-information-body .card-info .button { text-align: center; width: 102px; line-height: 20px; margin-top: 12px; padding: 3px 0px 4px 0px; }
+
+.finance-information-box .transaction-history .history-card .card { margin-bottom: 30px; }
+
+.finance-information-box .transaction-history .history-card .card .details-link { color: #8E99A6; }
+
+.finance-information-box .transaction-history .history-card .card .button { width: 80px; font-size: 12px; line-height: 15px; padding: 5px 3px 5px 3px; text-transform: capitalize; margin-top: 15px; margin-left: 20px; }
+
+.finance-information-box .transaction-history .history-card .card .button.danger { color: #fff; background: #FF7373; }
 
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 

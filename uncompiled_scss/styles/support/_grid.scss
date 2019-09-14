@@ -2,6 +2,14 @@
   div[class^="col"] {
     padding-left: 25px;
     padding-right: 25px;
+    &.disable-on-mobile {
+      padding-left: 23px;
+      padding-right: 0;
+    }
+    &.disable-on-mobile-sm {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .mobile-dn {

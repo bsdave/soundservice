@@ -161,25 +161,23 @@
 @include tablet {
   .settings-box {
     .settings-head {
-      text-align: center;
 
-        .buttons-category {
-          margin-left: 25%;
-          border-radius: 10px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          max-width: 292px;
-          margin-top: 10px;
+      .buttons-category {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 292px;
+        margin-top: 10px;
 
-          .button {
-            width: 145px;
-            background: transparent;
-            margin: 0;
-            border: 1px solid #E1E6EC;
-          }
+        .button {
+          width: 145px;
+          background: transparent;
+          margin: 0;
+          border: 1px solid #E1E6EC;
         }
+      }
     }
   }
 }

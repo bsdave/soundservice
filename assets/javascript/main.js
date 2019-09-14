@@ -52,20 +52,35 @@ const initializePlaylistSliders = () => {
         arrows: false,
         infinite: true,
         speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToShow: 1,
+        centerPadding: '30px',
+        centerMode: true,
         autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
             {
-                breakpoint: 320,
+                breakpoint: 480,
                 settings: {
                     slidesToShow: 2,
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 576,
                 settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    centerPadding: '60px',
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    centerPadding: '110px',
                     slidesToShow: 3,
                 }
             }

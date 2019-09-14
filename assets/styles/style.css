@@ -1483,6 +1483,36 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .finance-information-box .transaction-history .history-card .card .button.danger { color: #fff; background: #FF7373; }
 
+.search-box { width: 300px; height: 100px; }
+
+.search-box .search { position: absolute; margin: auto; top: 0; bottom: 0; left: 0; width: 80px; height: 80px; background: #fff; transition: all 1s; z-index: 4; }
+
+.search-box .search:hover { cursor: pointer; }
+
+.search-box .search::before { content: ""; position: absolute; margin: auto; top: 10px; right: 0; bottom: 0; left: 11px; width: 8px; height: 2px; background: #3C4147; transform: rotate(45deg); transition: all .5s; }
+
+.search-box .search::after { content: ""; position: absolute; margin: auto; top: -5px; right: 0; bottom: 0; left: -5px; width: 15px; height: 15px; border-radius: 50%; border: 2px solid #3C4147; transition: all .5s; }
+
+.search-box .search-input { position: absolute; margin: auto; top: 0; bottom: 0; left: 0; width: 50px; height: 50px; outline: none; border: none; background: #fff; color: #000; padding: 0 80px 0 20px; border-radius: 30px; transition: all 1s; opacity: 0; z-index: 5; font-size: 20px; line-height: 25px; }
+
+.search-box .search-input:focus { width: 300px; opacity: 1; cursor: text; }
+
+.search-box .search-input:focus ~ .search { right: -250px; background: #fff; z-index: 6; }
+
+.search-box .search-input:focus ~ .search::before { top: 0; left: 0; width: 25px; }
+
+.search-box .search-input:focus ~ .search::after { top: 0; left: 0; width: 25px; height: 2px; border: none; background: #FF7373; border-radius: 0%; transform: rotate(-45deg); }
+
+.search-box .search-input::-webkit-input-placeholder { color: #E1E6EC; opacity: 1; }
+
+.search-box .search-input::-moz-placeholder { color: #E1E6EC; opacity: 1; }
+
+.search-box .search-input:-ms-input-placeholder { color: #E1E6EC; opacity: 1; }
+
+.search-box .search-input::-ms-input-placeholder { color: #E1E6EC; opacity: 1; }
+
+.search-box .search-input::placeholder { color: #E1E6EC; opacity: 1; }
+
 html { position: relative; min-height: 100vh; box-sizing: border-box; }
 
 body { background: #fff; font-family: 'Muller'; font-size: 12px; line-height: 15px; color: #8E99A6; }

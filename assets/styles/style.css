@@ -782,10 +782,6 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .title { font-family: 'Muller'; font-weight: bold; font-size: 15px; line-height: 20px; color: #3C4147; padding: 0; }
 
-.label { font-size: 13px; line-height: 20px; font-weight: bold; color: #3C4147; margin: 0; padding-bottom: 5px; }
-
-.input { background: #F0F3F5; width: 100%; padding: 18px 10px 15px 18px; border: none; border-radius: 10px; display: block; margin-bottom: 10px; }
-
 .slider-box { position: relative; margin-top: 0; margin-bottom: 50px; }
 
 .slider-box .slider .slide { background-size: cover; background-repeat: no-repeat; background-position: center; min-height: 451px; }
@@ -1411,6 +1407,10 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .modal-box.opened-modal { top: 49%; background: #fff; }
 
+.label { font-size: 13px; line-height: 20px; font-weight: bold; color: #3C4147; margin: 0; padding-bottom: 5px; }
+
+.input { background: #F0F3F5; width: 100%; padding: 18px 10px 15px 18px; border: none; border-radius: 10px; display: block; margin-bottom: 10px; }
+
 .checkbox { font-size: 13px; line-height: 20px; margin-bottom: 20px; margin-left: 12px; }
 
 .checkbox input[type="checkbox"]:checked, .checkbox [type="checkbox"]:not(:checked) { position: absolute; left: -9999px; }
@@ -1482,6 +1482,60 @@ input[type="number"] { -moz-appearance: textfield; }
 .finance-information-box .transaction-history .history-card .card .button { width: 80px; font-size: 12px; line-height: 15px; padding: 5px 3px 5px 3px; text-transform: capitalize; margin-top: 15px; margin-left: 20px; }
 
 .finance-information-box .transaction-history .history-card .card .button.danger { color: #fff; background: #FF7373; }
+
+:focus { outline: none; }
+
+ul { padding: 0; margin: 0; list-style: none; }
+
+.wizard { position: relative; }
+
+.wizard > .steps { position: absolute; top: 5%; left: 50%; background: #F0F3F5; margin-right: -50%; transform: translate(-50%, -50%); z-index: 9; }
+
+.wizard > .steps .current-info, .wizard > .steps .number { display: none; }
+
+.wizard > .steps ul { display: flex; justify-content: center; }
+
+.wizard > .steps li a { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #e9e0cf; margin-right: 112px; position: relative; }
+
+.wizard > .steps li a:before { content: ""; width: 94px; height: 2px; background: #e9e0cf; position: absolute; right: 17px; top: 5px; }
+
+.wizard > .steps li a:after { content: ""; width: 0; height: 2px; background: #FFCF60; position: absolute; left: -102px; top: 5px; transition: all 0.6s ease; }
+
+.wizard > .steps li.first a { background: #FFCF60; }
+
+.wizard > .steps li.checked a { background: #FFCF60; }
+
+.wizard > .steps li.checked a:after { width: 94px; }
+
+.wizard > .steps li:last-child a { margin-right: 0; }
+
+.wizard > .steps li:first-child a:before { display: none; }
+
+.wizard > .steps li:first-child a:after { display: none; }
+
+.wizard > .content { position: relative; }
+
+.form-content { width: 100%; padding-top: 65px; padding-left: 17px; padding-right: 24px; }
+
+.form-content .checkbox { padding-left: 4px; margin: -10px 0 0 0; }
+
+.form-content .checkbox .label { font-size: 13px; }
+
+.form-content .form-holder { margin-bottom: 25px; margin-top: 22px; }
+
+.form-content .form-holder .title { font-size: 13px; line-height: 20px; margin: 0; }
+
+.form-content .form-holder.img-block { text-align: center; }
+
+.form-content .form-holder .img { background: #F1F6FB; padding: 20px; }
+
+.form-header { text-align: center; margin-top: 38px; }
+
+.form-header .description { line-height: 20px; padding: 0 40px; }
+
+.actions { text-align: center; }
+
+.actions li a { font-size: 12px; line-height: 20px; letter-spacing: 2px; text-transform: uppercase; text-align: center; color: #3C4147; padding: 15px 10px; text-decoration: none; font-weight: bold; border: none; border-radius: 50px; display: inline-block; width: 280px; background: #FFCF60; position: relative; }
 
 .search-box { width: 300px; height: 100px; }
 

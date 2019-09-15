@@ -1,11 +1,23 @@
-.block-box{
-  margin-top: 120px;
-  .block-header{
+.block-box {
+  margin-top: 89px;
+
+  .block-header {
     margin-bottom: 25px;
   }
 }
+
 .playlist-sliders-box {
   margin-bottom: 40px;
+
+  &.circle-playlists {
+    .playlist-slider {
+      .playlist {
+        .playlist-preview {
+          height: 100px;
+        }
+      }
+    }
+  }
 
   .playlist-slider {
     margin-bottom: 10px;
@@ -46,6 +58,7 @@
   height: 47px;
   background: url("../images/play.svg") center no-repeat, #fff;
 }
+
 .settings-button {
   position: absolute;
   top: -10px;
@@ -55,6 +68,7 @@
   height: 53px;
   background: url("../images/info-btn.svg") center no-repeat;
 }
+
 .add-playlist {
   display: inline-block;
   position: absolute;

@@ -751,6 +751,8 @@ input[type="number"] { -moz-appearance: textfield; }
   .container { padding-left: 25px; padding-right: 25px; }
   .container.disable-on-mobile { padding-left: 0; padding-right: 0; overflow-x: hidden; }
   .row { margin-left: -25px; margin-right: -25px; }
+  .report .row .col-7 { padding-right: 0; padding-left: 15px; }
+  .report .row .col-5 { padding-right: 0; padding-left: 15px; }
   .second-card .row .col-6 { padding-right: 0px; }
   .first-card .row .col-6 { padding-right: 0px; padding-left: 0px; } }
 
@@ -792,16 +794,6 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .slider-box .counter #current { font-size: 18px; color: #000; }
 
-@media (min-width: 992px) { .slider-box { margin-bottom: 90px; }
-  .slider-box .slider .slide { min-height: 786px; }
-  .slider-box .slider .slide .slide-body { padding: 286px 0 38px; }
-  .slider-box .slider .slide .slide-body .slide-right { padding: 20px 10px 20px 80px; }
-  .slider-box .counter { left: auto; right: 45px; bottom: 40px; font-size: 14px; letter-spacing: 2px; }
-  .slider-box .counter #current { font-size: 18px; color: #000; }
-  .slider-box .buttons { position: absolute; display: flex; width: 100%; margin-top: -120px; }
-  .slider-box .buttons .button { flex-basis: 400px; flex-grow: 0; flex-shrink: 1; display: block; padding-top: 53px; padding-bottom: 49px; }
-  .slider-box .buttons .button:first-child { text-align: right; } }
-
 .button { font-size: 12px; line-height: 20px; letter-spacing: 2px; text-transform: uppercase; text-align: center; color: #3C4147; padding: 15px 10px; text-decoration: none; font-weight: bold; font-family: 'Muller'; border: none; border-radius: 50px; display: inline-block; width: 100%; background: #FFCF60; }
 
 .button.dashed { border: 2px dashed #FFCF60; background: #fff; margin-top: 10px; margin-bottom: 10px; }
@@ -816,15 +808,21 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .header { position: absolute; top: 0; z-index: 20; right: 0; left: 0; letter-spacing: 1.7px; line-height: normal; }
 
+.header.bottom { padding-top: 10px; }
+
+.header.mb { padding-top: 30px; }
+
 .header .active { background: #373C42; color: #fff; border-left: 3px solid #FFCF60; }
 
-.header .header-body { padding: 42px 0 10px 0; }
+.header .header-body { padding: 0; }
 
 .header .header-body .menu-toggle { width: 100%; display: flex; flex-direction: row; justify-content: space-between; transition: 200ms linear; }
 
 .header .header-body .menu-toggle.right { justify-content: flex-end; }
 
 .header .header-body .menu-toggle .arrow { margin-top: 14px; margin-left: 12px; }
+
+.header .header-body .menu-toggle .arrow.mt { margin-top: 24px; }
 
 .header .header-body .navigation { background: #3C4147; position: absolute; left: 0; right: 0; top: -2000px; opacity: 0; z-index: -1; transition: 300ms ease-out; text-align: left; }
 
@@ -874,11 +872,13 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .header.opened .menu-toggle { opacity: 0; }
 
-.block-box { margin-top: 120px; }
+.block-box { margin-top: 89px; }
 
 .block-box .block-header { margin-bottom: 25px; }
 
 .playlist-sliders-box { margin-bottom: 40px; }
+
+.playlist-sliders-box.circle-playlists .playlist-slider .playlist .playlist-preview { height: 100px; }
 
 .playlist-sliders-box .playlist-slider { margin-bottom: 10px; }
 
@@ -934,7 +934,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .open { margin-top: 45px; }
 
-.opened-playlist-box { margin-top: 113px; }
+.opened-playlist-box { margin-top: 80px; }
 
 .opened-playlist-box .opened-playlist-head { margin-bottom: 20px; }
 
@@ -974,7 +974,11 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .opened-playlist-box .playlist-body .playlist-item .flexbox .like-song:focus { outline: none; }
 
-.playlist-creation-block { margin-top: 92px; margin-bottom: 50px; text-align: center; }
+.playlist-creation-block { margin-top: 80px; margin-bottom: 50px; text-align: center; }
+
+.playlist-creation-block.left { text-align: left; }
+
+.playlist-creation-block .playlist-creation-head.center { text-align: center; }
 
 .playlist-creation-block .playlist-creation-body .input { background: #F0F3F5; color: #E9E8E6; display: block; width: 100%; padding: 30px 10px 8px 15px; margin-bottom: 20px; border: none; border-radius: 10px; }
 
@@ -1042,7 +1046,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch { right: 0px; }
 
-.schedule-box { margin-top: 100px; margin-left: -3px; }
+.schedule-box { margin-top: 80px; margin-left: -3px; }
 
 .schedule-box .schedule-head { margin-bottom: 32px; }
 
@@ -1152,7 +1156,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .blacklist-box .blacklist .blacklist-footer .danger { background: #FF7373; color: #fff; text-transform: capitalize; width: 104px; padding: 0; }
 
-.settings-box { margin-top: 99px; margin-right: -20px; margin-left: -3px; }
+.settings-box { margin-top: 91px; margin-right: -20px; margin-left: -3px; }
 
 .settings-box .settings-head { margin-bottom: 47px; }
 
@@ -1172,7 +1176,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .settings-box .settings-body { margin-left: 70px; }
 
-.settings-box .settings-body .setting { margin-bottom: 25px; }
+.settings-box .settings-body .setting { margin-bottom: 45px; }
 
 .settings-box .settings-body .setting .settings-info { position: relative; margin-bottom: 20px; }
 
@@ -1182,7 +1186,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .settings-box .settings-body .setting .settings-info .delete { position: absolute; top: 10px; right: 14px; background: url("../images/delete-ico.svg") center no-repeat; color: #8E99A6; height: 21px; width: 16px; border: none; }
 
-.settings-box .settings-body .settings .checkbox { margin-bottom: 28px; margin-top: 7px; }
+.settings-box .settings-body .settings .checkbox { margin-bottom: 10px; margin-top: 7px; }
 
 .settings-box .settings-body .settings .description { font-size: 10px; line-height: 20px; font-weight: bold; letter-spacing: 1.5px; color: #3C4147; text-transform: uppercase; }
 
@@ -1205,7 +1209,7 @@ input[type="number"] { -moz-appearance: textfield; }
 @media (min-width: 576px) { .settings-box .settings-head .buttons-category { border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; max-width: 292px; margin-top: 10px; }
   .settings-box .settings-head .buttons-category .button { width: 145px; background: transparent; margin: 0; border: 1px solid #E1E6EC; } }
 
-.settings-box.second { margin-top: 105px; }
+.settings-box.second { margin-top: 90px; }
 
 .settings-box.second .settings-head { margin-bottom: 25px; }
 
@@ -1221,7 +1225,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .report-box { margin-top: 25px; }
 
-.report-box .report-body { margin-bottom: 40px; }
+.report-box .report-body { margin-bottom: 39px; }
 
 .report-box .report-body .report .song-name { margin-top: 10px; margin-bottom: 10px; }
 
@@ -1235,11 +1239,13 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .report-box .report-body .report .title { margin: 0; }
 
-.report-box .report-footer .pagination .numbers { display: flex; flex-direction: row; justify-content: space-between; }
+.report-box .report-footer .pagination .numbers { display: flex; flex-direction: row; justify-content: space-between; margin-top: -5px; margin-left: 5px; }
+
+.report-box .report-footer .pagination .numbers .number { margin-right: -7px; }
 
 .report-box .report-footer .pagination .numbers .number .num-btn { font-size: 15px; line-height: 25px; color: #3C4147; border: none; font-weight: bold; }
 
-.report-box .report-footer .pagination .numbers .number .num-btn.active { border: 2px solid #3C4147; padding: 0 10px; border-radius: 5px; }
+.report-box .report-footer .pagination .numbers .number .num-btn.active { border: 2px solid #3C4147; padding: 2px 13px; border-radius: 5px; }
 
 .connected-institution-box { margin-top: 39px; }
 
@@ -1260,6 +1266,8 @@ input[type="number"] { -moz-appearance: textfield; }
 .connected-institution-box .connected-institution .executor-name .description { line-height: 20px; }
 
 .connected-institution-box .connected-institution .status-button { margin-top: 20px; }
+
+.points-box.mt { margin-top: -34px; }
 
 .broadcast-point-cards { margin-top: 20px; }
 
@@ -1393,6 +1401,22 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .modal-box { position: absolute; z-index: 20; border-radius: 10px; top: -9999px; left: 50%; margin-right: -50%; transform: translate(-50%, -50%); transition: 300ms; width: 330px; background: black; }
 
+.modal-box.scroll { overflow-x: scroll; }
+
+.modal-box.scroll .modal-close { top: 18px; right: 25px; }
+
+.modal-box.scroll .modal-head { padding: 0 20px; }
+
+.modal-box.scroll .modal-head .big-title { margin: 0; padding: 0; }
+
+.modal-box.big-modal { width: 100%; height: 100%; border-radius: 0; }
+
+.modal-box.big-modal .modal { padding: 0; }
+
+.modal-box.big-modal.opened-modal { top: 50%; }
+
+.modal-box.big-modal .modal-close { z-index: 10; top: 75px; }
+
 .modal-box .modal-head { text-align: center; }
 
 .modal-box .modal-head .big-title { margin-bottom: 16px; }
@@ -1417,7 +1441,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .modal-box .modal { position: relative; padding: 34px 17px 28px 24px; }
 
-.modal-box.opened-modal { top: 35%; background: #fff; }
+.modal-box.opened-modal { top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%); background: #fff; }
 
 .input-block .dashed { border-radius: 10px; }
 
@@ -1557,15 +1581,39 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .wrapper-1 .actions li a { font-size: 12px; line-height: 20px; letter-spacing: 2px; text-transform: uppercase; text-align: center; color: #3C4147; padding: 15px 10px; text-decoration: none; font-weight: bold; border: none; border-radius: 50px; display: inline-block; width: 280px; background: #FFCF60; position: relative; }
 
+#chart { width: 650px; height: 324px; margin: 30px auto 0; display: block; }
+
+#chart #numbers { width: 50px; height: 100%; margin: 0; padding: 0; display: inline-block; float: left; }
+
+#chart #numbers .number { text-align: right; padding-right: 1em; list-style: none; height: 31px; position: relative; bottom: -16px; }
+
+#chart #numbers .number:last-child { height: 30px; }
+
+#chart #numbers .number .span-number { font-size: 13px; line-height: 17px; color: #3C4147; position: absolute; bottom: 25px; right: 10px; }
+
+#chart #bars { display: inline-block; width: 600px; height: 324px; padding: 0; margin: 0; }
+
+#chart #bars li { display: table-cell; width: 100px; height: 300px; margin: 0; text-align: center; position: relative; }
+
+#chart #bars li:after { content: ''; position: absolute; display: inline-block; bottom: 0; left: 15px; border-radius: 10px 10px 0 0; width: 20px; background: #F6F9FB; height: 100%; z-index: 0; }
+
+#chart #bars li .bar { display: block; width: 20px; margin-left: 15px; background: #DFE4E9; position: absolute; border-radius: 10px 10px 0 0; bottom: 0; z-index: 10; }
+
+#chart #bars li .bar.active { background: #FFCF60; }
+
+#chart #bars li .bar.active:after { content: ''; position: absolute; display: inline-block; width: 20px; height: 20px; border-radius: 50%; border: 1px solid #D7AC4A; top: 1px; left: 0; background: #fff; margin: 0; }
+
+#chart #bars li span { color: #3C4147; width: 100%; position: absolute; top: -2em; left: 0; text-align: center; }
+
 .search-box { width: 300px; height: 100px; }
 
-.search-box .search { position: absolute; margin: auto; top: 0; bottom: 0; left: 0; width: 80px; height: 80px; background: #fff; transition: all 1s; z-index: 4; }
+.search-box .search { position: absolute; margin: auto; top: 0px; bottom: 0; left: 4px; width: 80px; height: 80px; background: transparent; transition: all 1s; z-index: 4; }
 
 .search-box .search::before { content: ""; position: absolute; margin: auto; top: 10px; right: 0; bottom: 0; left: 11px; width: 8px; height: 2px; background: #3C4147; transform: rotate(45deg); transition: all .5s; }
 
 .search-box .search::after { content: ""; position: absolute; margin: auto; top: -5px; right: 0; bottom: 0; left: -5px; width: 15px; height: 15px; border-radius: 50%; border: 2px solid #3C4147; transition: all .5s; }
 
-.search-box .search-input { position: absolute; margin: auto; top: 0; bottom: 0; left: 0; width: 50px; height: 50px; outline: none; border: none; background: #fff; color: #000; padding: 0 80px 0 20px; border-radius: 30px; transition: all 1s; opacity: 0; z-index: 5; font-size: 20px; line-height: 25px; }
+.search-box .search-input { position: absolute; margin: auto; top: 0px; bottom: 0; left: 4px; width: 50px; height: 50px; outline: none; border: none; background: #fff; color: #000; padding: 0 80px 0 20px; border-radius: 30px; transition: all 1s; opacity: 0; z-index: 5; font-size: 20px; line-height: 25px; }
 
 .search-box .search-input:focus { width: 300px; opacity: 1; cursor: text; }
 

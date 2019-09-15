@@ -2,7 +2,7 @@
   margin-top: 25px;
 
   .report-body {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 
     .report {
       .song-name {
@@ -44,8 +44,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-top: -5px;
+        margin-left: 5px;
 
         .number {
+          margin-right: -7px;
           .num-btn {
             font-size: 15px;
             line-height: 25px;
@@ -54,7 +57,7 @@
             font-weight: bold;
             &.active {
               border: 2px solid #3C4147;
-              padding: 0 10px;
+              padding: 2px 13px;
               border-radius: 5px;
             }
 

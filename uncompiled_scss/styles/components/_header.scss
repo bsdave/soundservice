@@ -6,14 +6,23 @@
   left: 0;
   letter-spacing: 1.7px;
   line-height: normal;
-  .active{
+  &.bottom{
+    padding-top: 10px;
+  }
+
+  &.mb {
+    padding-top: 30px;
+  }
+
+  .active {
     background: #373C42;
     color: #fff;
     border-left: 3px solid $color-yellow;
   }
 
   .header-body {
-    padding: 42px 0 10px 0;
+    padding: 0;
+
 
     .menu-toggle {
       width: 100%;
@@ -21,12 +30,17 @@
       flex-direction: row;
       justify-content: space-between;
       transition: 200ms linear;
-      &.right{
+
+      &.right {
         justify-content: flex-end;
       }
-      .arrow{
+
+      .arrow {
         margin-top: 14px;
         margin-left: 12px;
+        &.mt{
+          margin-top: 24px;
+        }
       }
     }
 
@@ -133,7 +147,8 @@
           position: relative;
           margin-right: -15px;
           margin-left: -15px;
-          &.bb{
+
+          &.bb {
             margin-bottom: 12px;
           }
         }

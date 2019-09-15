@@ -1,7 +1,15 @@
 .playlist-creation-block {
-  margin-top: 92px;
+  margin-top: 80px;
   margin-bottom: 50px;
   text-align: center;
+  &.left{
+    text-align: left;
+  }
+  .playlist-creation-head{
+    &.center{
+      text-align: center;
+    }
+  }
 
   .playlist-creation-body {
     .input {

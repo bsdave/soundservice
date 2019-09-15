@@ -1,3 +1,51 @@
+input[type="button"] {
+  display: block;
+  margin: 200px auto 0 auto;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: none;
+  border: none;
+  background-color: deepSkyBlue;
+  color: azure;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+  }
+}
+
+.alert-box {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  padding: 30px 10px 30px 30px;
+}
+
+
+.alert-box {
+  .bold {
+    font-weight: bold;
+  }
+
+  &.failure,
+  &.success {
+    color: white;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  &.success {
+    background-color: $color-green;
+  }
+
+  &.failure {
+    background-color: $color-red;
+  }
+}
+
+
 .finance-information-box {
   .big-title {
     margin-top: -8px;
@@ -136,6 +184,7 @@
 
     .billing-information-head {
       margin-bottom: 33px;
+
       .title {
         font-size: 13px;
         margin: 0;
@@ -152,15 +201,18 @@
         margin-top: 11px;
       }
     }
-    .billing-information-body{
-      .card-info{
+
+    .billing-information-body {
+      .card-info {
         margin-bottom: 32px;
-        .title{
+
+        .title {
           font-size: 13px;
           margin: 0;
           padding-bottom: 6px;
         }
-        .button{
+
+        .button {
           text-align: center;
           width: 102px;
           line-height: 20px;
@@ -177,10 +229,12 @@
     .history-card {
       .card {
         margin-bottom: 30px;
+
         .details-link {
           color: #8E99A6;
         }
-        .button{
+
+        .button {
           width: 80px;
           font-size: 12px;
           line-height: 15px;
@@ -188,7 +242,8 @@
           text-transform: capitalize;
           margin-top: 15px;
           margin-left: 20px;
-          &.danger{
+
+          &.danger {
             color: $color-white;
             background: $color-red;
           }

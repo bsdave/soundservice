@@ -54,6 +54,7 @@
       z-index: -1;
       transition: 300ms ease-out;
       text-align: left;
+      overflow: hidden;
 
       .user-block {
         display: flex;
@@ -88,6 +89,9 @@
         display: inline-block;
         height: 22px;
         width: 22px;
+        position: absolute;
+        top: 12px;
+        left: 15px;
 
         background-repeat: no-repeat;
         background-position: center;

@@ -1,9 +1,11 @@
-.playlist-creation-block{
+.playlist-creation-block {
   text-align: center;
 }
+
 .players {
   margin-top: 90px;
-  .general-text{
+
+  .general-text {
     margin-bottom: 25px;
   }
 
@@ -15,8 +17,10 @@
       margin-right: -15px;
       margin-left: -15px;
       margin-bottom: 10px;
-      .player-info{
+
+      .player-info {
         margin-bottom: 15px;
+
         .title {
           font-family: 'Muller';
           font-weight: 400;
@@ -30,6 +34,7 @@
           }
         }
       }
+
       .player-download-window {
         background: #FFFFFF;
         border-radius: 10px;
@@ -37,9 +42,10 @@
         display: flex;
         margin-bottom: 40px;
         -webkit-box-shadow: 0px 9px 15px 0px rgba(54, 56, 50, 0.10);
-        -moz-box-shadow:    0px 9px 15px 0px rgba(54, 56, 50, 0.10);
-        box-shadow:         0px 9px 15px 0px rgba(54, 56, 50, 0.10);
-        .player-img{
+        -moz-box-shadow: 0px 9px 15px 0px rgba(54, 56, 50, 0.10);
+        box-shadow: 0px 9px 15px 0px rgba(54, 56, 50, 0.10);
+
+        .player-img {
           margin-top: 5px;
           margin-right: 15px;
         }
@@ -66,7 +72,8 @@
           line-height: 20px;
           letter-spacing: 0;
           text-decoration: none;
-          &.x{
+
+          &.x {
             color: #02B7F1;
           }
         }
@@ -75,9 +82,10 @@
   }
 }
 
-@include tablet{
-  .players{
+@include tablet {
+  .players {
     width: 500px;
-    margin-left: 8%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -1,4 +1,5 @@
 .activation-account-box {
+  margin-bottom: 70px;
   .big-title {
     margin-top: -7px;
   }
@@ -51,8 +52,6 @@
   }
 
   .activation-account-body {
-    margin-right: -13px;
-    margin-left: -8px;
     margin-bottom: 5px;
 
     .services {
@@ -171,7 +170,12 @@
   .activation-account-footer {
 
     .final-price {
+      display: flex;
+      justify-content: space-around;
       margin-bottom: 9px;
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: bold;
 
 
       .description {
@@ -182,12 +186,6 @@
         margin: 20px 0;
         margin-left: 12px;
 
-        &.right {
-          margin-left: 66px;
-          font-size: 15px;
-          line-height: 20px;
-          font-weight: bold;
-        }
       }
     }
   }

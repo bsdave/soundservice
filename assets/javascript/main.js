@@ -92,12 +92,28 @@ const initializePlaylistSliders = () => {
     });
 };
 
-$(function() {
-    $("#bars li .bar").each( function( key, bar ) {
+function notifyBarSuccess() {
+    if (!$('.alert-box').length) {
+        $('<div class="alert-box success" ><span class="bold">Оплачено! </span>Ежемесячный платеж был успешно получен.</div>').prependTo('body').delay(5000).fadeOut(1000, function () {
+            $('.alert-box').remove();
+        });
+    }
+}
+
+function notifyBarFailure() {
+    if (!$('.alert-box').length) {
+        $('<div class="alert-box failure" ><span class="bold">Необходимо указать новый способ оплаты </span> - Не удается применить ни один из ваших текущих способов оплаты.</div>').prependTo('body').delay(5000).fadeOut(1000, function () {
+            $('.alert-box').remove();
+        });
+    }
+}
+
+$(function () {
+    $("#bars li .bar").each(function (key, bar) {
         var percentage = $(this).data('percentage');
 
         $(this).animate({
-            'height' : percentage + '%'
+            'height': percentage + '%'
         }, 1000);
     });
 });

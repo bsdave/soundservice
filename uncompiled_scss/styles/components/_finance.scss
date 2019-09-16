@@ -125,6 +125,23 @@ input[type="button"] {
     .finance-footer {
       margin-bottom: 57px;
 
+      .point {
+        position: relative;
+        margin-left: 30px;
+        .quantity {
+          font-size: 25px;
+          font-weight: bold;
+          color: #E1E6EC;
+          position: absolute;
+          left: -30px;
+          top: 0;
+
+          &.success {
+            color: $color-green;
+          }
+        }
+      }
+
       .title {
         position: relative;
         margin-left: 27px;
@@ -139,42 +156,6 @@ input[type="button"] {
           height: 18px;
           background: url('../images/points.svg') center no-repeat;
         }
-      }
-
-
-      .point {
-        &.zero {
-          position: relative;
-          margin-left: 30px;
-
-          &:after {
-            content: '';
-            position: absolute;
-            display: inline-block;
-            top: -10px;
-            left: -32px;
-            width: 18px;
-            height: 30px;
-            background: url('../images/zero.svg') center no-repeat;
-          }
-        }
-
-        &.one {
-          position: relative;
-          margin-left: 30px;
-
-          &:after {
-            content: '';
-            position: absolute;
-            display: inline-block;
-            top: -10px;
-            left: -32px;
-            width: 12px;
-            height: 30px;
-            background: url('../images/one.svg') center no-repeat;
-          }
-        }
-
       }
     }
   }

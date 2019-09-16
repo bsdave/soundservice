@@ -65,14 +65,8 @@
 </header>
 
 
-
-
 <div class="container">
   <div class="settings-box second">
-    <input onClick="notifyBarSuccess()" type="button" value="click me">
-    <input onClick="notifyBarFailure()" type="button" value="click me">
-
-
     <div class="settings-head">
 
       <h3 class="big-title">Настройки компании</h3>
@@ -114,9 +108,9 @@
         <div class="row">
 
           <div class="col-6 disable-on-mobile">
-              <p class="description">Текущий тариф </p>
-              <p class="description bold active">Популярный</p>
-              <a class="link" href="#">Внести платеж</a>
+            <p class="description">Текущий тариф </p>
+            <p class="description bold active">Популярный</p>
+            <a class="link" href="#">Внести платеж</a>
           </div>
 
           <div class="col-6 disable-on-mobile-sm">
@@ -135,15 +129,18 @@
           <div class="row">
 
             <div class="col-6">
-              <p class="point one">Точек подключено</p>
+
+              <p class="point one"><span class="quantity success">1</span>Точек подключено</p>
             </div>
 
             <div class="col-6">
-              <p class="point zero">Точек отключено</p>
+
+              <p class="point zero"><span class="quantity">0</span>Точек отключено</p>
             </div>
 
             <div class="col-6">
-              <p class="point zero">Проблемы с подключением</p>
+
+              <p class="point zero"><span class="quantity">0</span>Проблемы с подключением</p>
             </div>
 
           </div>
@@ -267,7 +264,7 @@
               <a class="details-link" href="#">PDF</a>
             </div>
 
-            <button class="button success">Оплачено</button>
+            <button class="button success" onClick="notifyBarSuccess()" type="button">Оплачено</button>
 
           </div>
         </div>

@@ -15,6 +15,7 @@ $(function () {
 
     $('.wizard > .steps li a').click(function () {
         $(this).parent().addClass('checked');
+        $(this).parent().prevAll().addClass('checked');
         $(this).parent().nextAll().removeClass('checked');
     });
     // Custome Jquery Step Button

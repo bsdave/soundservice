@@ -1,11 +1,9 @@
 .search-box {
-  width: 300px;
-  height: 100px;
 
   .search {
     position: absolute;
     margin: auto;
-    top: 0px;
+    top: 35px;
     bottom: 0;
     left: 4px;
     width: 80px;
@@ -48,7 +46,7 @@
   .search-input {
     position: absolute;
     margin: auto;
-    top: 0;
+    top: 35px;
     bottom: 0;
     left: 4px;
     width: 50px;

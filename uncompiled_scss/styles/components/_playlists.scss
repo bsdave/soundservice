@@ -10,10 +10,20 @@
   margin-bottom: 40px;
 
   &.circle-playlists {
+    .slick-list {
+      padding: 0 55% 0 0;
+    }
+
     .playlist-slider {
       .playlist {
         .playlist-preview {
           height: 100px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+
+          background-size: auto;
+          background-repeat: no-repeat;
         }
       }
     }
@@ -24,12 +34,18 @@
 
     .playlist {
       .playlist-preview {
-        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
-        height: 140px;
+
+
+        height: 127px;
         padding: 20px;
         margin-bottom: 14px;
+        position: relative;
       }
 
       .title {
@@ -43,7 +59,7 @@
   }
 
   .slick-list {
-    margin: 0 -10px;
+    padding: 0 26% 0 0;
   }
 }
 
@@ -73,13 +89,42 @@
   display: inline-block;
   position: absolute;
   top: 40%;
-  left: 40%;
+  left: 45%;
   margin-right: -50%;
   background: #fff;
   border-radius: 50%;
   width: 47px;
   height: 47px;
   background: url("../images/plus.svg") center no-repeat, #fff;
+}
+
+@include tablet {
+  .playlist-sliders-box {
+    .playlist-slider {
+      margin-bottom: 10px;
+
+      .playlist {
+        .playlist-preview {
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+
+          background-size: cover;
+          background-repeat: no-repeat;
+
+
+          height: 180px;
+          padding: 20px;
+          margin-bottom: 14px;
+          position: relative;
+        }
+
+        .title {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
 }
 
 

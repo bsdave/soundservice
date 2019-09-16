@@ -16,7 +16,7 @@
   position: absolute;
   z-index: 20;
   border-radius: 10px;
-  top: -9999px;
+  top: -3000px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -66,6 +66,26 @@
 
   .modal-head {
     text-align: center;
+    &.head{
+      padding: 0;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: -50px;
+        left: -50px;
+        width: 105px;
+        height: 40px;
+        background: url('../images/logo.svg') center no-repeat;
+      }
+    }
 
     .big-title {
       margin-bottom: 16px;
@@ -87,6 +107,30 @@
   .modal-body {
     opacity: 1;
 
+    .players {
+      margin-top: 0;
+
+      .general-text {
+        text-align: center;
+        margin: 0;
+
+        .title {
+          font-size: 13px;
+          margin: 0;
+          padding: 15px 0;
+        }
+      }
+
+      .players-body {
+        .player {
+          background: #fff;
+
+          .player-download-window {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
 
     .templates {
       display: flex;
@@ -140,13 +184,67 @@
   .modal {
     position: relative;
     padding: 34px 17px 28px 24px;
+
+    .form {
+      .sm-description {
+        text-align: center;
+        color: #8E99A6;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        margin: 0;
+        padding: 15px 20px;
+      }
+    }
+
+    .asd {
+      display: flex;
+
+
+      .left {
+        margin-right: 15px;
+      }
+
+      input {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #3C4147;
+        width: 40px;
+        height: 46px;
+        text-align: center;
+        border: 1px solid #E1E6EC;
+        border-radius: 3px;
+      }
+    }
   }
 
   &.opened-modal {
-    top: 50%;
+    top: 38%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     background: #fff;
+  }
+}
+
+@include tablet {
+  .modal-body {
+    opacity: 1;
+
+    .players {
+      width: 290px;
+    }
+
+    .players-body {
+      .player {
+        background: #fff;
+
+        .player-download-window {
+
+        }
+      }
+    }
   }
 }

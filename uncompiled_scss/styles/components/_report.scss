@@ -39,25 +39,24 @@
   }
 
   .report-footer {
+    margin-bottom: 40px;
     .pagination {
       .numbers {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: -5px;
-        margin-left: 5px;
 
         .number {
-          margin-right: -7px;
           .num-btn {
+            color: black;
+            float: left;
+            text-decoration: none;
             font-size: 15px;
-            line-height: 25px;
-            color: #3C4147;
+            padding: 8px 16px;
             border: none;
             font-weight: bold;
             &.active {
               border: 2px solid #3C4147;
-              padding: 2px 13px;
               border-radius: 5px;
             }
 
